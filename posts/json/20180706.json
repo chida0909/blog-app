@@ -1,0 +1,16 @@
+{
+  "id": 2,
+  "title": "hoge",
+  "created_at": "2018-07-06T00:00:00.000Z",
+  "updated_at": "2019-01-06T00:00:00.000Z",
+  "draft": false,
+  "tags": "Mac,chrome",
+  "top_image": "/icons/mac-apple.svg",
+  "bodyContent": "## デフォルトのショートカットキー\ntest",
+  "bodyHtml": "<h2>デフォルトのショートカットキー</h2>\n<p>test</p>\n",
+  "dir": "posts/json",
+  "base": "20180706.json",
+  "ext": ".json",
+  "sourceBase": "20180706.md",
+  "sourceExt": ".md"
+}
