@@ -1,5 +1,5 @@
-開発環境の立ち上げ
+開発環境の立ち上げ  
 $ npm run dev
 
-MarkdownからJSONの変換
+MarkdownからJSONの変換  
 $ npm run md
