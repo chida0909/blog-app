@@ -3,28 +3,29 @@
     <v-container>
       <v-row>
         <v-col
-          v-for="(content, index) in contents"
-          :key="index"
+          v-for="content in contents"
+          :key="content.id"
           cols="12"
           sm="6"
           md="6"
           lg="4"
         >
-          <v-card
-            height="100%"
-            class="top-cards"
-          >
-            <nuxt-link
-              :to="`/${content.permalink}`"
-              tag="div"
-            >
-              <v-img
-                :src="`/posts/${content.id}.jpg`"
-                class="top-images"
-              />
+          <v-card height="100%" class="cursor">
+            <nuxt-link :to="`/${content.permalink}`" tag="div">
+              <v-img :src="`/posts/${content.id}.jpg`" class="top-images" />
               <v-card-text class="top-date">{{content.created_at | postDate }}</v-card-text>
               <v-card-title>{{content.title}}</v-card-title>
-              <v-card-text>{{content.tags}}</v-card-text>
+              <span
+                v-for="(tag, index) in content.tags"
+                :key="index"
+              >
+                <v-chip
+                 class="ma-2"
+                 label
+                >
+                  {{tag}}
+                </v-chip>
+              </span>
             </nuxt-link>
           </v-card>
         </v-col>
@@ -45,9 +46,17 @@ export default {
   computed: {
     contents() {
       // ファイル名の一覧を取得
-      const postDates = sourceFileArray.map( s => s.replace(/[^0-9]/g, '') );
+      const postDates = sourceFileArray.map( sourceFile => sourceFile.replace(/[^0-9]/g, '') );
       // 記事一覧を生成
-      return postDates.map( p => fileMap[`posts/json/${p}.json`] );
+      const postLists = postDates.map( postDate => fileMap[`posts/json/${postDate}.json`] );
+      // タグを配列に変換
+      if (!Array.isArray(postLists[0].tags)) {
+        for (var i in postLists) {
+          postLists[i].tags = postLists[i].tags.split(",");
+        }
+      }
+
+      return postLists;
     }
   },
   filters: {
@@ -62,7 +71,8 @@ export default {
       if (String(getDate).length === 1) {
         getDate = "0" + getDate;
       }
-      return date.getFullYear() + "." + getMonth + "." + getDate;
+
+      return `${date.getFullYear()}.${getMonth}.${getDate}`;
     }
   }
 }
