@@ -14,18 +14,20 @@
             <nuxt-link :to="`/${content.permalink}`" tag="div">
               <v-img :src="`/posts/${content.id}.jpg`" class="top-images" />
               <v-card-text class="top-date">{{content.created_at | postDate }}</v-card-text>
-              <v-card-title>{{content.title}}</v-card-title>
-              <span
-                v-for="(tag, index) in content.tags"
-                :key="index"
-              >
-                <v-chip
-                 class="ma-2"
-                 label
+              <v-card-title class="top-title">{{content.title}}</v-card-title>
+              <div class="top-tag">
+                <span
+                  v-for="(tag, index) in content.tags"
+                  :key="index"
                 >
-                  {{tag}}
-                </v-chip>
-              </span>
+                  <v-chip
+                  class="ma-2"
+                  label
+                  >
+                    {{tag}}
+                  </v-chip>
+                </span>
+              </div>
             </nuxt-link>
           </v-card>
         </v-col>
@@ -51,7 +53,7 @@ export default {
       const postLists = postDates.map( postDate => fileMap[`posts/json/${postDate}.json`] );
       // タグを配列に変換
       if (!Array.isArray(postLists[0].tags)) {
-        for (var i in postLists) {
+        for (let i in postLists) {
           postLists[i].tags = postLists[i].tags.split(",");
         }
       }
@@ -88,5 +90,8 @@ export default {
 }
 .top-date {
   padding-bottom: 0;
+}
+.top-title {
+  min-height: 96px;
 }
 </style>
