@@ -13,7 +13,7 @@
           <v-card height="100%" class="cursor">
             <nuxt-link :to="`/${content.permalink}`" tag="div">
               <v-img :src="`/posts/${content.id}.jpg`" class="top-images" />
-              <v-card-text class="top-date">{{content.created_at | postDate }}</v-card-text>
+              <v-card-text class="top-date">{{content.created_at | contentDate }}</v-card-text>
               <v-card-title class="top-title">{{content.title}}</v-card-title>
               <div class="top-tag">
                 <span
@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import { sourceFileArray, fileMap } from '~/posts/summary.json';
+import { sourceFileArray, fileMap } from '@/posts/summary.json';
 
 export default {
   data() {
@@ -62,7 +62,7 @@ export default {
     }
   },
   filters: {
-    postDate(val) {
+    contentDate(val) {
       const date = new Date(val);
       let getMonth = date.getMonth() + 1;
       let getDate = date.getDate();
@@ -73,17 +73,16 @@ export default {
       if (String(getDate).length === 1) {
         getDate = "0" + getDate;
       }
-
       return `${date.getFullYear()}.${getMonth}.${getDate}`;
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
 .top-images {
   object-fit: cover;
-  height: 250px;
+  height: 248px;
 }
 .top-cards {
   cursor: pointer;
