@@ -2,28 +2,13 @@
   <v-app>
     <v-container fluid>
     <v-row>
-      <v-col
-        cols="12"
-        sm="3"
-        md="3"
-        lg="3"
-      >
-        <v-card-title>Table of Contents</v-card-title>
-        <hr>
-        <v-card-text
-          v-for="(tableOfContents, index) in content.tableOfContents"
-          :key="index"
-          class="table-content"
+      <ContentTag :data="content.tableOfContents"></ContentTag>
+        <v-col
+          cols="12"
+          sm="9"
+          md="9"
+          lg="9"
         >
-        {{tableOfContents}}
-        </v-card-text>
-      </v-col>
-      <v-col
-        cols="12"
-        sm="9"
-        md="9"
-        lg="9"
-      >
         <v-card class="main-content">
           <v-img :src="`/posts/${content.id}.jpg`" />
           <v-card-text class="main-date">{{content.created_at | contentDate }}</v-card-text>
@@ -43,7 +28,10 @@
               </span>
             </div>
             <hr>
-          <v-card-text v-html="content.bodyHtml" class="main-article"></v-card-text>
+          <v-card-text
+            v-html="content.bodyHtml"
+            class="main-article">
+          </v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -53,8 +41,12 @@
 
 <script>
 import { sourceFileArray, fileMap } from '@/posts/summary.json'
+import ContentTag from '@/components/ContentTag.vue';
 
 export default {
+  components: {
+    ContentTag
+  },
   data () {
     return { content: '' }
   },
@@ -133,7 +125,6 @@ export default {
   font-weight: bold;
 }
 .main-content {
-  width: 72%;
   margin: auto;
 }
 .main-article {
