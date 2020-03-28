@@ -1,12 +1,43 @@
 <template>
   <v-app>
-    <v-container>
-      <v-card class="main-content">
-        <v-img :src="`/posts/${content.id}.jpg`" />
-        <v-card-text class="main-date">{{content.created_at | contentDate }}</v-card-text>
-        <v-card-title>{{content.title}}</v-card-title>
-        <v-card-text v-html="content.bodyHtml" class="main-article"></v-card-text>
-      </v-card>
+    <v-container fluid>
+    <v-row class="row-test">
+      <v-col
+          sm="3"
+          md="3"
+          lg="3"
+      >
+        <v-card-title>Table of Contents</v-card-title>
+        <v-card-text>hoge</v-card-text>
+      </v-col>
+      <v-col
+          sm="9"
+          md="9"
+          lg="9"
+      >
+        <v-card class="main-content">
+          <v-img :src="`/posts/${content.id}.jpg`" />
+          <v-card-text class="main-date">{{content.created_at | contentDate }}</v-card-text>
+          <v-card-title class="main-title">{{content.title}}</v-card-title>
+            <div class="main-tag">
+              <span
+                v-for="(tag, index) in content.tags"
+                :key="index"
+              >
+                <v-chip
+                  class="ma-2"
+                  label
+                  outlined
+                >
+                  {{tag}}
+                </v-chip>
+              </span>
+            </div>
+            <hr>
+          <v-card-text v-html="content.bodyHtml" class="main-article"></v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
     </v-container>
   </v-app>
 </template>
@@ -28,7 +59,25 @@ export default {
     const postDates = sourceFileArray.map( s => s.replace(/[^0-9]/g, '') );
     // 特定のファイル名を取得
     const postDate = postDates.filter( p => fileMap[`posts/json/${p}.json`].permalink === params.id);
-    return { content: require(`@/posts/json/${postDate}.json`) }
+
+    const content = require(`@/posts/json/${postDate}.json`);
+
+    if ( content.bodyHtml.includes("<h2>")) {
+      content.bodyHtml = content.bodyHtml.replace( /<h2>/g, "<h2 style='margin-bottom:16px;'>" );
+    }
+    if ( content.bodyHtml.includes("<p>")) {
+      content.bodyHtml = content.bodyHtml.replace( /<p>/g, "<p style='line-height: 2;'>" );
+    }
+
+    if (!Array.isArray(content.tags)) {
+      if ( content.tags.includes(",")) {
+        content.tags = content.tags.split(",");
+      } else {
+        content.tags = [content.tags];
+      }
+    }
+
+    return { content }
   },
   head() {
     return {
@@ -61,6 +110,9 @@ export default {
 .main-date {
   padding-bottom: 0;
 }
+.main-title {
+  font-weight: bold;
+}
 .main-content {
   width: 72%;
   margin: auto;
@@ -68,7 +120,16 @@ export default {
 .main-article {
   color: black !important;
 }
-.container  {
+.container {
   position: relative;
+}
+.main-tag {
+  padding: 0px 0px 8px 8px;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #f1f1f1;
+  height: 0;
+  padding: 0;
 }
 </style>
