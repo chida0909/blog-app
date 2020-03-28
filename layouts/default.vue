@@ -1,38 +1,18 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
     <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-        <nuxt-link to="/" tag="div" class="cursor">
-          <v-toolbar-title v-text="title" />
-        </nuxt-link>
+      dark
+      shrink-on-scroll
+      src="https://picsum.photos/1920/1080?random">
+      <template v-slot:img="{ props }">
+        <v-img
+          v-bind="props"
+          gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
+        ></v-img>
+      </template>
+      <nuxt-link to="/" tag="div" class="cursor">
+        <v-toolbar-title v-text="title" class="header-tltle" />
+      </nuxt-link>
     </v-app-bar>
     <v-content>
       <v-container>
@@ -40,10 +20,8 @@
       </v-container>
     </v-content>
     <v-footer
-      :fixed="fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
@@ -52,24 +30,6 @@
 export default {
   data () {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Top',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
       title: 'Chida Note'
     }
   }
@@ -79,5 +39,9 @@ export default {
 <style>
 .cursor {
   cursor: pointer;
+}
+.header-tltle {
+  font-weight: bold;
+  margin-top: 4%;
 }
 </style>
