@@ -1,19 +1,28 @@
 <template>
   <v-app>
     <v-container fluid>
-    <v-row class="row-test">
+    <v-row>
       <v-col
-          sm="3"
-          md="3"
-          lg="3"
+        cols="12"
+        sm="3"
+        md="3"
+        lg="3"
       >
         <v-card-title>Table of Contents</v-card-title>
-        <v-card-text>hoge</v-card-text>
+        <hr>
+        <v-card-text
+          v-for="(tableOfContents, index) in content.tableOfContents"
+          :key="index"
+          class="table-content"
+        >
+        {{tableOfContents}}
+        </v-card-text>
       </v-col>
       <v-col
-          sm="9"
-          md="9"
-          lg="9"
+        cols="12"
+        sm="9"
+        md="9"
+        lg="9"
       >
         <v-card class="main-content">
           <v-img :src="`/posts/${content.id}.jpg`" />
@@ -77,6 +86,16 @@ export default {
       }
     }
 
+    // h2を起点とした目次の作成
+    const headText = content.bodyHtml.split("<h2 style='margin-bottom:16px;'>");
+    const tableOfContents = headText.map( h => {
+      const headTextSub = h.indexOf("</h2>");
+      if (headTextSub > 0) {
+        return h.substring(0, headTextSub)
+      }
+    });
+    content.tableOfContents = tableOfContents.filter(h => h);
+
     return { content }
   },
   head() {
@@ -131,5 +150,9 @@ hr {
   border-top: 1px solid #f1f1f1;
   height: 0;
   padding: 0;
+}
+.table-content {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 </style>
