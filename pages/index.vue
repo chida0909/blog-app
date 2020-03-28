@@ -1,13 +1,13 @@
 <template>
   <v-app>
-    <v-container>
+    <v-container fluid>
       <v-row>
         <v-col
           v-for="content in contents"
           :key="content.id"
           cols="12"
           sm="6"
-          md="6"
+          md="4"
           lg="4"
         >
           <v-card height="100%" class="cursor">
@@ -21,8 +21,9 @@
                   :key="index"
                 >
                   <v-chip
-                  class="ma-2"
-                  label
+                    class="ma-2"
+                    label
+                    outlined
                   >
                     {{tag}}
                   </v-chip>
@@ -50,15 +51,15 @@ export default {
       // ファイル名の一覧を取得
       const postDates = sourceFileArray.map( sourceFile => sourceFile.replace(/[^0-9]/g, '') );
       // 記事一覧を生成
-      const postLists = postDates.map( postDate => fileMap[`posts/json/${postDate}.json`] );
+      const contents = postDates.map( postDate => fileMap[`posts/json/${postDate}.json`] );
       // タグを配列に変換
-      if (!Array.isArray(postLists[0].tags)) {
-        for (let i in postLists) {
-          postLists[i].tags = postLists[i].tags.split(",");
+      if (!Array.isArray(contents[0].tags)) {
+        for (let i in contents) {
+          contents[i].tags = contents[i].tags.split(",");
         }
       }
 
-      return postLists;
+      return contents;
     }
   },
   filters: {
@@ -92,5 +93,9 @@ export default {
 }
 .top-title {
   min-height: 96px;
+  padding: 0 16px;
+}
+.top-tag {
+  padding: 8px;
 }
 </style>

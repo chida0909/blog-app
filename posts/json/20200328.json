@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "title": "Nuxt.jsのAPIを読み解く",
+  "permalink": "nuxt-api-decipher",
+  "description": "WindowsからMacに移って、よく使っているショートカットキーの違いに戸惑いました。",
+  "created_at": "2020-03-28T00:00:00.000Z",
+  "updated_at": "2020-03-28T00:00:00.000Z",
+  "tags": "nuxt",
+  "bodyContent": "[Nuxtの公式ガイド](https://ja.nuxtjs.org/guide)を見ただけで、まだ分からない点を深堀りするための自分用メモです。\n\n## デフォルトのショートカットキー",
+  "bodyHtml": "<p><a href=\"https://ja.nuxtjs.org/guide\">Nuxtの公式ガイド</a>を見ただけで、まだ分からない点を深堀りするための自分用メモです。</p>\n<h2>デフォルトのショートカットキー</h2>\n",
+  "dir": "posts/json",
+  "base": "20200328.json",
+  "ext": ".json",
+  "sourceBase": "20200328.md",
+  "sourceExt": ".md"
+}
