@@ -1,9 +1,7 @@
 <template>
   <v-app>
     <v-container fluid>
-      <v-row>
-        <PostsList :contentsList="contents" />
-      </v-row>
+      <PostsList :contentsList="contents" />
     </v-container>
   </v-app>
 </template>
@@ -27,7 +25,6 @@ export default {
       const postDates = sourceFileArray.map( sourceFile => sourceFile.replace(/[^0-9]/g, '') );
       // 記事一覧を生成
       const contents = postDates.map( postDate => fileMap[`posts/json/${postDate}.json`] );
-
       // タグを配列に変換
       if (!Array.isArray(contents[0].tags)) {
         for (let i in contents) {
