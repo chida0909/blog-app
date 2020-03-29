@@ -12,6 +12,7 @@
     "md": "processmd ./posts/markdown/*.md --stdout --outputDir ./posts/json > ./posts/summary.json"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.9.6",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {

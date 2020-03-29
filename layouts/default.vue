@@ -36,7 +36,6 @@
           color="white"
           text
           rounded
-          class="my-2"
           nuxt
           :to="link.url"
         >
@@ -60,7 +59,7 @@ export default {
     footerLinks() {
       const linksArray = [
         { 'id': 1, 'name': 'Home', 'url': '/', 'icon': 'mdi-home' },
-        { 'id': 2, 'name': 'contact', 'url': '/contactform', 'icon': 'mdi-email' }
+        { 'id': 2, 'name': 'contact', 'url': '/contact', 'icon': 'mdi-email' }
        ];
       return linksArray
     }

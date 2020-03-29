@@ -15,7 +15,13 @@
     {{content}}
     </v-card-text>
     <div class="table-content-botton">
-      <v-btn block outlined nuxt color="grey darken-3" to="/">
+      <v-btn
+        block
+        outlined
+        nuxt
+        color="grey darken-3"
+        to="/"
+      >
         <v-icon>mdi-home</v-icon>&nbsp;HOMEに戻る
       </v-btn>
     </div>

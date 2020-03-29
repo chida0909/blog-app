@@ -45,6 +45,7 @@ export default {
   */
   modules: [
     'nuxt-user-agent',
+    '@nuxtjs/axios'
   ],
   /*
   ** vuetify module configuration
