@@ -18,7 +18,7 @@
               v-for="(tag, index) in content.tags"
               :key="index"
             >
-              <v-btn outlined nuxt color="grey" :to="`/tags/${tag}`">
+              <v-btn small outlined nuxt color="grey" :to="`/tags/${tag}`" style="margin-right: 8px;">
                 {{tag}}
               </v-btn>
             </span>

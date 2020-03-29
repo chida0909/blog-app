@@ -21,8 +21,32 @@
       </v-container>
     </v-content>
     <v-footer
-      app
+      color="primary lighten-1"
+      padless
     >
+      <v-row
+        justify="center"
+        no-gutters
+      >
+        <v-btn
+          v-for="link in footerLinks"
+          :key="link.id"
+          color="white"
+          text
+          rounded
+          class="my-2"
+          nuxt
+          :to="link.url"
+        >
+          {{ link.name }}
+        </v-btn>
+        <v-col
+          class="primary lighten-2 py-4 text-center white--text"
+          cols="12"
+        >
+          {{ new Date().getFullYear() }} — <strong>Chida Note</strong>
+        </v-col>
+      </v-row>
     </v-footer>
   </v-app>
 </template>
@@ -31,7 +55,17 @@
 export default {
   data () {
     return {
-      title: 'Chida Note'
+      title: 'Chida Note',
+      links: []
+    }
+  },
+  computed: {
+    footerLinks() {
+      const linksArray = [
+        { 'id': 1, 'name': 'Home', 'url': '/' },
+        { 'id': 2, 'name': 'contact', 'url': '/contactform' }
+       ];
+      return linksArray
     }
   }
 }
