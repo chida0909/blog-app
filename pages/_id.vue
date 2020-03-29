@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <v-container fluid>
-      <v-row>
-        <ContentTag :contentTag="content.tableOfContents" />
+      <v-row justify="center">
+        <ContentTag :contentTag="content.tableOfContents" v-if="content.deviceType === 'pc'" />
         <ContentMain :contentMain="content" />
       </v-row>
     </v-container>
@@ -27,10 +27,12 @@ export default {
       return true;
     }
   },
-  asyncData({ params }) {
+  asyncData(context) {
+    // contextを使いため、context.paramsを利用
+    const params = context.params;
+
     // ファイル名の一覧を取得
     const postDates = sourceFileArray.map( s => s.replace(/[^0-9]/g, '') );
-
 
     // 特定のファイル名を取得（同一のpermalinkが存在しているとエラーになるので注意）
     const postDate = postDates.filter( p => fileMap[`posts/json/${p}.json`].permalink == params.id);
@@ -58,6 +60,11 @@ export default {
       }
     });
     content.tableOfContents = tableOfContents.filter(h => h);
+
+    // デバイス情報を取得（smartphone or pc）
+    content.deviceType = context.$ua.deviceType();
+
+    console.log(content.deviceType)
 
     return { content }
   },

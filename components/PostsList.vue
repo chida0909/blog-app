@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <v-row justify="center">
     <v-col
       v-for="content in contentsList"
       :key="content.id"
