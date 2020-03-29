@@ -62,6 +62,7 @@ export default {
   padding-bottom: 0;
 }
 .main-title {
+  font-size: 1.5em;
   font-weight: bold;
 }
 .main-content {
@@ -69,6 +70,8 @@ export default {
 }
 .main-article {
   color: black !important;
+  font-size: 16px;
+  line-height: 2;
 }
 .container {
   position: relative;
@@ -81,9 +84,5 @@ hr {
   border-top: 1px solid #d5d5de;
   height: 0;
   padding: 0;
-}
-.table-content {
-  padding-top: 8px;
-  padding-bottom: 8px;
 }
 </style>

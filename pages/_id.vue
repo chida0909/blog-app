@@ -13,6 +13,7 @@
 import { sourceFileArray, fileMap } from '@/posts/summary.json'
 import ContentMain from '@/components/ContentMain.vue';
 import ContentTag from '@/components/ContentTag.vue';
+// import ContentTag from '@/components/ContentForm.vue';
 
 export default {
   components: {
@@ -28,6 +29,7 @@ export default {
     }
   },
   asyncData({ params }) {
+
     // ファイル名の一覧を取得
     const postDates = sourceFileArray.map( s => s.replace(/[^0-9]/g, '') );
     // 特定のファイル名を取得
@@ -36,10 +38,7 @@ export default {
     const content = require(`@/posts/json/${postDate}.json`);
 
     if ( content.bodyHtml.includes("<h2>")) {
-      content.bodyHtml = content.bodyHtml.replace( /<h2>/g, "<h2 style='margin-bottom:16px;'>" );
-    }
-    if ( content.bodyHtml.includes("<p>")) {
-      content.bodyHtml = content.bodyHtml.replace( /<p>/g, "<p style='line-height: 2;'>" );
+      content.bodyHtml = content.bodyHtml.replace( /<h2>/g, "<h2 style='margin: 24px 0 16px 0'>" );
     }
 
     if (!Array.isArray(content.tags)) {
@@ -51,7 +50,7 @@ export default {
     }
 
     // h2を起点とした目次の作成
-    const headText = content.bodyHtml.split("<h2 style='margin-bottom:16px;'>");
+    const headText = content.bodyHtml.split("<h2 style='margin: 24px 0 16px 0'>");
     const tableOfContents = headText.map( h => {
       const headTextSub = h.indexOf("</h2>");
       if (headTextSub > 0) {

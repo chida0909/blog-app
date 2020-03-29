@@ -3,7 +3,8 @@
     <v-app-bar
       dark
       shrink-on-scroll
-      src="https://picsum.photos/1920/1080?random">
+      src="https://picsum.photos/1920/1080?random"
+    >
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"

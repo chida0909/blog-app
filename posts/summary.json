@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Nuxt.jsのAPIを読み解く",
       "permalink": "nuxt-api-decipher",
-      "description": "WindowsからMacに移って、よく使っているショートカットキーの違いに戸惑いました。",
+      "description": "Nuxtの公式ガイドを見ただけで、まだ理解出来ていないので",
       "created_at": "2020-03-28T00:00:00.000Z",
       "updated_at": "2020-03-28T00:00:00.000Z",
       "tags": "nuxt",
