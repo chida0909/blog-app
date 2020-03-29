@@ -13,7 +13,6 @@
 import { sourceFileArray, fileMap } from '@/posts/summary.json'
 import ContentMain from '@/components/ContentMain.vue';
 import ContentTag from '@/components/ContentTag.vue';
-// import ContentTag from '@/components/ContentForm.vue';
 
 export default {
   components: {
@@ -29,11 +28,12 @@ export default {
     }
   },
   asyncData({ params }) {
-
     // ファイル名の一覧を取得
     const postDates = sourceFileArray.map( s => s.replace(/[^0-9]/g, '') );
-    // 特定のファイル名を取得
-    const postDate = postDates.filter( p => fileMap[`posts/json/${p}.json`].permalink === params.id);
+
+
+    // 特定のファイル名を取得（同一のpermalinkが存在しているとエラーになるので注意）
+    const postDate = postDates.filter( p => fileMap[`posts/json/${p}.json`].permalink == params.id);
 
     const content = require(`@/posts/json/${postDate}.json`);
 

@@ -1,9 +1,7 @@
 <template>
   <v-app>
     <v-container fluid>
-      <v-row>
-        <PostsList :contentsList="contents" />
-      </v-row>
+      <PostsList :contentsList="contents" />
     </v-container>
   </v-app>
 </template>
@@ -21,12 +19,19 @@ export default {
       content: []
     }
   },
-  computed: {
-    contents() {
+  asyncData({ params }) {
       // ファイル名の一覧を取得
       const postDates = sourceFileArray.map( sourceFile => sourceFile.replace(/[^0-9]/g, '') );
+
       // 記事一覧を生成
-      const contents = postDates.map( postDate => fileMap[`posts/json/${postDate}.json`] );
+      const contentsList = postDates.map( postDate => {
+        if (fileMap[`posts/json/${postDate}.json`].tags.includes(params.id)) {
+          return fileMap[`posts/json/${postDate}.json`];
+        }
+      });
+
+      // 対象外を除外
+      const contents = contentsList.filter( c => c );
 
       // タグを配列に変換
       if (!Array.isArray(contents[0].tags)) {
@@ -35,8 +40,7 @@ export default {
         }
       }
 
-      return contents;
-    }
+      return { contents };
   },
   head() {
     return {
