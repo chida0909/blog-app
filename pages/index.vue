@@ -16,7 +16,8 @@ export default {
   },
   data() {
     return {
-      content: {}
+      title: 'Chida Note',
+      contents: {}
     }
   },
   asyncData() {
@@ -35,7 +36,7 @@ export default {
   },
   head() {
     return {
-      title: 'Chida Note',
+      title: this.title,
       meta: [
         { charset: 'utf-8' },
         // meta viewport Google推奨の記述

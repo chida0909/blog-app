@@ -30,11 +30,9 @@ export default {
 
 <style scoped>
 .table-content {
-  padding-top: 8px;
-  padding-bottom: 8px;
   font-size: 16px;
 }
 .table-content-botton {
-  padding-top: 24px;
+  padding-top: 20px;
 }
 </style>

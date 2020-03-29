@@ -16,6 +16,7 @@ export default {
   },
   data() {
     return {
+      title: '',
       content: []
     }
   },
@@ -39,9 +40,10 @@ export default {
           contents[i].tags = contents[i].tags.split(",");
         }
       }
-
       return { contents };
+  },
+  head() {
+    return { title: `${this.contents[0].tags[0]}のタグ一覧` }
   }
 }
 </script>
-

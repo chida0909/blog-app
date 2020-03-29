@@ -15,6 +15,9 @@ export default {
       this.$nuxt.$loading.start()
       setTimeout(() => this.$nuxt.$loading.finish(), 500)
     })
+  },
+  head() {
+    return { title: 'お問い合わせ' }
   }
 }
 </script>

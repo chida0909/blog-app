@@ -35,6 +35,7 @@
       </v-card-text>
       <hr>
       <v-card-text>
+        <p style="color: #424242">本記事は個人的な技術メモです。正確な情報を求めている場合は他サイトをご確認ください。ご質問やご意見などがある場合は、以下のCONTACTよりお願いします。</p>
         <nuxt-link to="/contactform" style="text-decoration: none;"><v-icon>mdi-email</v-icon>&nbsp;CONTACT</nuxt-link>
       </v-card-text>
     </v-card>
