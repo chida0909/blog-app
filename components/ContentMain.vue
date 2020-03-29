@@ -47,8 +47,8 @@ export default {
   props: ["contentMain"],
   filters: {
     contentDate(val) {
-      const date = new Date(val);
-      let getMonth = date.getMonth() + 1;
+      const date = new Date(val)
+      let getMonth = date.getMonth() + 1
       let getDate = date.getDate();
 
       if (String(getMonth).length === 1) {
@@ -57,7 +57,7 @@ export default {
       if (String(getDate).length === 1) {
         getDate = "0" + getDate;
       }
-      return `${date.getFullYear()}.${getMonth}.${getDate}`;
+      return `${date.getFullYear()}.${getMonth}.${getDate}`
     }
   }
 };

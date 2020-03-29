@@ -44,17 +44,17 @@ export default {
   props: ["contentsList"],
   filters: {
     contentDate(val) {
-      const date = new Date(val);
-      let getMonth = date.getMonth() + 1;
-      let getDate = date.getDate();
+      const date = new Date(val)
+      let getMonth = date.getMonth() + 1
+      let getDate = date.getDate()
 
       if (String(getMonth).length === 1) {
-        getMonth = "0" + getMonth;
+        getMonth = "0" + getMonth
       }
       if (String(getDate).length === 1) {
-        getDate = "0" + getDate;
+        getDate = "0" + getDate
       }
-      return `${date.getFullYear()}.${getMonth}.${getDate}`;
+      return `${date.getFullYear()}.${getMonth}.${getDate}`
     }
   },
 }

@@ -60,7 +60,7 @@ export default {
       const linksArray = [
         { 'id': 1, 'name': 'Home', 'url': '/', 'icon': 'mdi-home' },
         { 'id': 2, 'name': 'contact', 'url': '/contact', 'icon': 'mdi-email' }
-       ];
+       ]
       return linksArray
     }
   }
