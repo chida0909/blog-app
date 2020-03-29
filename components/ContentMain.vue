@@ -28,6 +28,10 @@
         v-html="contentMain.bodyHtml"
         class="main-article">
       </v-card-text>
+      <hr>
+      <v-card-text>
+        <nuxt-link to="/contactform">お問い合わせ</nuxt-link>
+      </v-card-text>
     </v-card>
   </v-col>
 </template>
@@ -74,7 +78,7 @@ export default {
 }
 hr {
   border: 0;
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid #d5d5de;
   height: 0;
   padding: 0;
 }
