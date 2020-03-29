@@ -64,8 +64,6 @@ export default {
     // デバイス情報を取得（smartphone or pc）
     content.deviceType = context.$ua.deviceType();
 
-    console.log(content.deviceType)
-
     return { content }
   },
   head() {

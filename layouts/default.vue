@@ -3,7 +3,7 @@
     <v-app-bar
       dark
       shrink-on-scroll
-      src="https://picsum.photos/1920/1080?random"
+      src="/posts/header.jpg"
     >
       <template v-slot:img="{ props }">
         <v-img
@@ -21,12 +21,14 @@
       </v-container>
     </v-content>
     <v-footer
-      color="primary lighten-1"
+      class="testchida"
       padless
     >
-      <v-row
-        justify="center"
-        no-gutters
+      <v-img
+        src="/posts/footer.jpg"
+        height="100px"
+        gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
+        class="white--text align-center text-center"
       >
         <v-btn
           v-for="link in footerLinks"
@@ -41,13 +43,7 @@
           <v-icon>{{link.icon}}</v-icon>&nbsp;
           {{ link.name }}
         </v-btn>
-        <v-col
-          class="primary lighten-2 py-4 text-center white--text"
-          cols="12"
-        >
-          {{ new Date().getFullYear() }} — <strong>Chida Note</strong>
-        </v-col>
-      </v-row>
+      </v-img>
     </v-footer>
   </v-app>
 </template>

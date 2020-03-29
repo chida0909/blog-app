@@ -11,7 +11,7 @@
       <v-card height="100%" class="cursor">
         <nuxt-link :to="`/${content.permalink}`" tag="div">
           <v-img
-          :src="`/posts/${content.id}.jpg`"
+           :src="`/posts/${content.id}.jpg`"
            class="top-images"
            height="225px"
           />
