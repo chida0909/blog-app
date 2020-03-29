@@ -13,12 +13,18 @@
           <v-img :src="`/posts/${content.id}.jpg`" class="top-images" />
           <v-card-text class="top-date">{{content.created_at | contentDate }}</v-card-text>
           <v-card-title class="top-title">{{content.title}}</v-card-title>
-          <v-card-text class="top-tag">
+          <v-card-text>
             <span
               v-for="(tag, index) in content.tags"
               :key="index"
             >
-              <v-btn small outlined nuxt color="grey" :to="`/tags/${tag}`" style="margin-right: 8px;">
+            <v-btn
+              small
+              outlined
+              nuxt
+              color="grey darken-3"
+              :to="`/tags/${tag}`"
+              class="tag-btton">
                 {{tag}}
               </v-btn>
             </span>
@@ -65,7 +71,8 @@ export default {
   min-height: 96px;
   padding: 0 16px;
 }
-.top-tag {
-  padding: 8px;
+.tag-btton {
+  margin-right: 8px;
+  padding: 12px;
 }
 </style>

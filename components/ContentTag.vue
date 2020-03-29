@@ -15,8 +15,8 @@
     {{content}}
     </v-card-text>
     <div class="table-content-botton">
-      <v-btn block outlined nuxt color="grey" to="/">
-        TOPに戻る
+      <v-btn block outlined nuxt color="grey darken-3" to="/">
+        <v-icon>mdi-home</v-icon>&nbsp;HOMEに戻る
       </v-btn>
     </div>
   </v-col>
@@ -30,8 +30,8 @@ export default {
 
 <style scoped>
 .table-content {
-  padding-top: 12px;
-  padding-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 16px;
 }
 .table-content-botton {

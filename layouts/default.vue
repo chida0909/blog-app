@@ -38,6 +38,7 @@
           nuxt
           :to="link.url"
         >
+          <v-icon>{{link.icon}}</v-icon>&nbsp;
           {{ link.name }}
         </v-btn>
         <v-col
@@ -62,8 +63,8 @@ export default {
   computed: {
     footerLinks() {
       const linksArray = [
-        { 'id': 1, 'name': 'Home', 'url': '/' },
-        { 'id': 2, 'name': 'contact', 'url': '/contactform' }
+        { 'id': 1, 'name': 'Home', 'url': '/', 'icon': 'mdi-home' },
+        { 'id': 2, 'name': 'contact', 'url': '/contactform', 'icon': 'mdi-email' }
        ];
       return linksArray
     }

@@ -14,13 +14,15 @@
             v-for="(tag, index) in contentMain.tags"
             :key="index"
           >
-            <v-chip
-              class="ma-2"
-              label
+            <v-btn
+              small
               outlined
-            >
-              {{tag}}
-            </v-chip>
+              nuxt
+              color="grey darken-3"
+              :to="`/tags/${tag}`"
+              class="tag-btton">
+                {{tag}}
+            </v-btn>
           </span>
         </div>
         <hr>
@@ -30,7 +32,7 @@
       </v-card-text>
       <hr>
       <v-card-text>
-        <nuxt-link to="/contactform">お問い合わせ</nuxt-link>
+        <nuxt-link to="/contactform" style="text-decoration: none;"><v-icon>mdi-email</v-icon>&nbsp;CONTACT</nuxt-link>
       </v-card-text>
     </v-card>
   </v-col>
@@ -69,7 +71,7 @@ export default {
   margin: auto;
 }
 .main-article {
-  color: black !important;
+  color: #424242 !important;
   font-size: 16px;
   line-height: 2;
 }
@@ -84,5 +86,8 @@ hr {
   border-top: 1px solid #d5d5de;
   height: 0;
   padding: 0;
+}
+.tag-btton {
+  margin: 8px;
 }
 </style>
