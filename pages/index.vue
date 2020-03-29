@@ -35,11 +35,13 @@ export default {
   },
   head() {
     return {
-      title: 'Chida Note'
-      // meta: [
-        // `hid` は一意の識別子として使用されます。 `vmid` は動作しないので使わないでください。
-        // { hid: 'description', name: 'description', content: 'My custom description' }
-      // ]
+      title: 'Chida Note',
+      meta: [
+        { charset: 'utf-8' },
+        // meta viewport Google推奨の記述
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'description' }
+      ]
     }
   }
 }

@@ -6,7 +6,10 @@
     lg="9"
   >
     <v-card class="main-content">
-      <v-img :src="`/posts/${contentMain.id}.jpg`" />
+      <v-img
+        :src="`/posts/${contentMain.id}.jpg`"
+        height="250px"
+      />
       <v-card-text class="main-date">{{contentMain.created_at | contentDate }}</v-card-text>
       <v-card-title class="main-title">{{contentMain.title}}</v-card-title>
         <div class="main-tag">

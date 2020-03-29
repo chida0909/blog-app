@@ -10,7 +10,11 @@
     >
       <v-card height="100%" class="cursor">
         <nuxt-link :to="`/${content.permalink}`" tag="div">
-          <v-img :src="`/posts/${content.id}.jpg`" class="top-images" />
+          <v-img
+          :src="`/posts/${content.id}.jpg`"
+           class="top-images"
+           height="225px"
+          />
           <v-card-text class="top-date">{{content.created_at | contentDate }}</v-card-text>
           <v-card-title class="top-title">{{content.title}}</v-card-title>
           <v-card-text>
