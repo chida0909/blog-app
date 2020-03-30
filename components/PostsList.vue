@@ -6,7 +6,7 @@
       cols="12"
       sm="4"
       md="4"
-      lg="4"
+      lg="3"
     >
       <v-card height="100%" class="cursor">
         <nuxt-link :to="`/${content.permalink}`" tag="div">

@@ -3,7 +3,7 @@
     cols="12"
     sm="9"
     md="9"
-    lg="9"
+    lg="6"
   >
     <v-card class="main-content">
       <v-img

@@ -3,7 +3,7 @@
     cols="12"
     sm="3"
     md="3"
-    lg="3"
+    lg="2"
   >
     <v-card-title>Table of Contents</v-card-title>
     <hr>
