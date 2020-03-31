@@ -8,7 +8,7 @@
     <v-card-title>
       Table of Contents
     </v-card-title>
-    <hr>
+    <hr style="max-width: 80%;">
     <v-card-text
       v-for="(content, index) in contentTag"
       :key="index"
@@ -46,5 +46,6 @@ export default {
 }
 .table-content-botton {
   padding-top: 16px;
+  max-width: 80%;
 }
 </style>
