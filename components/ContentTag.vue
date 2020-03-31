@@ -1,11 +1,13 @@
 <template>
   <v-col
     cols="12"
-    sm="3"
-    md="3"
-    lg="2"
+    sm="4"
+    md="4"
+    lg="3"
   >
-    <v-card-title>Table of Contents</v-card-title>
+    <v-card-title>
+      Table of Contents
+    </v-card-title>
     <hr>
     <v-card-text
       v-for="(content, index) in contentTag"
@@ -22,7 +24,10 @@
         color="grey darken-3"
         to="/"
       >
-        <v-icon>mdi-home</v-icon>&nbsp;HOMEに戻る
+        <v-icon>
+          mdi-home
+        </v-icon>
+        &nbsp;HOMEに戻る
       </v-btn>
     </div>
   </v-col>
@@ -31,14 +36,15 @@
 <script>
 export default {
   props: ["contentTag"]
-};
+}
 </script>
 
 <style scoped>
 .table-content {
   font-size: 16px;
+  padding: 8px;
 }
 .table-content-botton {
-  padding-top: 20px;
+  padding-top: 16px;
 }
 </style>

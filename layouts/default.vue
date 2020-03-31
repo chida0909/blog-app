@@ -9,10 +9,18 @@
         <v-img
           v-bind="props"
           gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
-        ></v-img>
+        >
+        </v-img>
       </template>
-      <nuxt-link to="/" tag="div" class="cursor">
-        <v-toolbar-title v-text="title" class="header-tltle" />
+      <nuxt-link
+        to="/"
+        tag="div"
+        class="cursor"
+      >
+        <v-toolbar-title
+          v-text="title"
+          class="header-tltle"
+        />
       </nuxt-link>
     </v-app-bar>
     <v-content>
@@ -33,13 +41,16 @@
         <v-btn
           v-for="link in footerLinks"
           :key="link.id"
+          :to="link.url"
           color="white"
           text
           rounded
           nuxt
-          :to="link.url"
         >
-          <v-icon>{{link.icon}}</v-icon>&nbsp;
+          <v-icon>
+            {{link.icon}}
+          </v-icon>
+          &nbsp;
           {{ link.name }}
         </v-btn>
       </v-img>

@@ -8,27 +8,38 @@
       md="4"
       lg="3"
     >
-      <v-card height="100%" class="cursor">
-        <nuxt-link :to="`/${content.permalink}`" tag="div">
+      <v-card
+        height="100%"
+        class="cursor"
+      >
+        <nuxt-link
+          :to="`/${content.permalink}`"
+          tag="div"
+        >
           <v-img
            :src="`/posts/${content.id}.jpg`"
            class="top-images"
            height="225px"
           />
-          <v-card-text class="top-date">{{content.created_at | contentDate }}</v-card-text>
-          <v-card-title class="top-title">{{content.title}}</v-card-title>
+          <v-card-text class="top-date">
+            {{content.created_at | contentDate }}
+          </v-card-text>
+          <v-card-title class="top-title">
+            {{content.title}}
+          </v-card-title>
           <v-card-text>
             <span
               v-for="(tag, index) in content.tags"
               :key="index"
             >
-            <v-btn
-              small
-              outlined
-              nuxt
-              color="grey darken-3"
-              :to="`/tags/${tag}`"
-              class="tag-btton">
+              <v-btn
+                small
+                outlined
+                nuxt
+                color="grey darken-3"
+                :to="`/tags/${tag}`"
+                class="tag-btton"
+              >
                 {{tag}}
               </v-btn>
             </span>
