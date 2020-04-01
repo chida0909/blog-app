@@ -42,7 +42,7 @@ export default {
 <style scoped>
 .table-content {
   font-size: 16px;
-  padding: 8px;
+  padding: 4px;
 }
 .table-content-botton {
   padding-top: 16px;
