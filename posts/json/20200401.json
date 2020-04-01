@@ -1,0 +1,15 @@
+{
+  "id": 2,
+  "title": "Nuxt.jsの各ディレクトリの役割",
+  "permalink": "nuxt-directory-role",
+  "description": "Nuxtの各ディレクトリの役割について、箇条書きで仕様をまとめました。",
+  "created_at": "2020-04-01T00:00:00.000Z",
+  "tags": "nuxt",
+  "bodyContent": "Nuxt.jsのディレクトリ構造は [Nuxtの公式ガイド](https://ja.nuxtjs.org/guide/directory-structure/) に書いていますが、理解を深めるため箇条書きで仕様をまとめました。追加情報があれば都度、更新します。\n\n## assetsディレクトリ\n- Webpack（モジュールバンドラー）によってビルドされるファイルが配置します。（SCSSなど）\n\n## staticディレクトリ\n- コンパイルしない静的なファイルを配置します。（robots.txtやsitemap.xmlなど）\n  \n  &#13;&#10;\n  \n画像ファイルをassets、staticのどちらに置くかは[Nuxt.js｜画像の参照方法のいろいろ](https://dev83.com/nuxtjs-image-reference/)で言及されていました。\n\n結論、\n  \n  &#13;&#10;\n  \n- データ容量の小さな画像は「assets」に格納\n- データ容量の大きな画像は「static」に格納\n  \n  &#13;&#10;\n  \nがベストのようです。\n\n## componentsディレクトリ\n- components ディレクトリには Vue.js のコンポーネントファイルを入れます。\n- asyncDataやfetchを使うことはできません。\n\n## layoutsディレクトリ\n- アプリケーションのレイアウトファイルを入れます。レイアウトはサイドバーなど、ページの外観を変更するために使用されます。\n\n## middlewareディレクトリ\n- レンダリングするよりも前に実行される関数を定義できます。\n- サーバーサイド側で実行されるため、alertなどのクライアント側で実行される関数は使えません。\n\n## pagesディレクトリ\nNuxt.jsの中で基本的で一番重要なディレクトリで、ビューとルーティングに関する役割を持ちます。\n\n## pluginsディレクトリ\nVue.jsアプリケーションをインスタンス化する前に実行したいJavaScriptプラグインを入れます。\n\n## store ディレクトリ\n- store ディレクトリにはVuexストアのファイルを入れます。\n- VuexストアはNuxt.jsに付属していますが、デフォルトでは無効になっています。",
+  "bodyHtml": "<p>Nuxt.jsのディレクトリ構造は <a href=\"https://ja.nuxtjs.org/guide/directory-structure/\">Nuxtの公式ガイド</a> に書いていますが、理解を深めるため箇条書きで仕様をまとめました。追加情報があれば都度、更新します。</p>\n<h2>assetsディレクトリ</h2>\n<ul>\n<li>Webpack（モジュールバンドラー）によってビルドされるファイルが配置します。（SCSSなど）</li>\n</ul>\n<h2>staticディレクトリ</h2>\n<ul>\n<li>\n<p>コンパイルしない静的なファイルを配置します。（robots.txtやsitemap.xmlなど）</p>\n<p>\r\n</p>\n</li>\n</ul>\n<p>画像ファイルをassets、staticのどちらに置くかは<a href=\"https://dev83.com/nuxtjs-image-reference/\">Nuxt.js｜画像の参照方法のいろいろ</a>で言及されていました。</p>\n<p>結論、</p>\n<p>\r\n</p>\n<ul>\n<li>\n<p>データ容量の小さな画像は「assets」に格納</p>\n</li>\n<li>\n<p>データ容量の大きな画像は「static」に格納</p>\n<p>\r\n</p>\n</li>\n</ul>\n<p>がベストのようです。</p>\n<h2>componentsディレクトリ</h2>\n<ul>\n<li>components ディレクトリには Vue.js のコンポーネントファイルを入れます。</li>\n<li>asyncDataやfetchを使うことはできません。</li>\n</ul>\n<h2>layoutsディレクトリ</h2>\n<ul>\n<li>アプリケーションのレイアウトファイルを入れます。レイアウトはサイドバーなど、ページの外観を変更するために使用されます。</li>\n</ul>\n<h2>middlewareディレクトリ</h2>\n<ul>\n<li>レンダリングするよりも前に実行される関数を定義できます。</li>\n<li>サーバーサイド側で実行されるため、alertなどのクライアント側で実行される関数は使えません。</li>\n</ul>\n<h2>pagesディレクトリ</h2>\n<p>Nuxt.jsの中で基本的で一番重要なディレクトリで、ビューとルーティングに関する役割を持ちます。</p>\n<h2>pluginsディレクトリ</h2>\n<p>Vue.jsアプリケーションをインスタンス化する前に実行したいJavaScriptプラグインを入れます。</p>\n<h2>store ディレクトリ</h2>\n<ul>\n<li>store ディレクトリにはVuexストアのファイルを入れます。</li>\n<li>VuexストアはNuxt.jsに付属していますが、デフォルトでは無効になっています。</li>\n</ul>\n",
+  "dir": "posts/json",
+  "base": "20200401.json",
+  "ext": ".json",
+  "sourceBase": "20200401.md",
+  "sourceExt": ".md"
+}
