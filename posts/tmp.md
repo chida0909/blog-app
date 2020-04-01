@@ -16,3 +16,11 @@ CREATE	新しいデータベースオブジェクトの作成
 DROP	既存のデータベースオブジェクトの削除
 ALTER	既存のデータベースオブジェクトの変更
 TRUNCATE	テーブル内のデータ全体の削除
+
+
+https://logmi.jp/tech/articles/321249
+Vue.jsにおいてMixinを用いる注意点と、Pluginで代用する方法
+
+
+https://codmon.kibe.la/notes/9174
+フロントエンドアーキテクチャ【技術選定編】

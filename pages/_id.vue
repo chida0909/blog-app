@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-content>
-      <v-container fluid fill-height>
+      <v-container>
         <v-row justify="center">
           <ContentTag :contentTag="content.tableOfContents" v-if="content.deviceType === 'pc'" />
           <ContentMain :contentMain="content" />
