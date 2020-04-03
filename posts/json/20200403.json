@@ -1,0 +1,15 @@
+{
+  "id": 4,
+  "title": "Nuxt.jsのmiddlewareを使い関数を共通化してみる",
+  "permalink": "nuxt-middleware-function",
+  "description": null,
+  "created_at": "2020-04-03T00:00:00.000Z",
+  "tags": "nuxt",
+  "bodyContent": "Nuxt.jsのMiddlewareを使うことで、レンダリングするよりも前に実行される関数を定義できます。\n\n## 実装してみる\n実用性は皆無ですが、試しでMiddlewareの機能を使ってみます。\n\nmiddlewareディレクトリにtest.jsを作成する。\n```middleware/test.js\nexport default function() {\n  console.log(\"test\")\n}\n```\n\nnuxt.config.jsにrouterを設定します。\n```nuxt.config.js\nrouter: {\n  middleware: \"test\"\n}\n```\n\nnuxt.config.jsにrouterを設定します。\n```pages/index.vue\nexport default {\n  middleware: 'test',\n}\n```\n\n\nこれはテストコードです。\n```\nexport default {\n  router {\n    middleware: 'test'\n  }\n}\n```",
+  "bodyHtml": "<p>Nuxt.jsのMiddlewareを使うことで、レンダリングするよりも前に実行される関数を定義できます。</p>\n<h2>実装してみる</h2>\n<p>実用性は皆無ですが、試しでMiddlewareの機能を使ってみます。</p>\n<p>middlewareディレクトリにtest.jsを作成する。</p>\n<pre><code class=\"hljs\">export default function() {\n  console.log(\"test\")\n}</code></pre><p>nuxt.config.jsにrouterを設定します。</p>\n<pre><code class=\"hljs\">router: {\n  middleware: \"test\"\n}</code></pre><p>nuxt.config.jsにrouterを設定します。</p>\n<pre><code class=\"hljs\">export default {\n  middleware: 'test',\n}</code></pre><p>これはテストコードです。</p>\n<pre><code>export default {\n  router {\n    middleware: 'test'\n  }\n}\n</code></pre>\n",
+  "dir": "posts/json",
+  "base": "20200403.json",
+  "ext": ".json",
+  "sourceBase": "20200403.md",
+  "sourceExt": ".md"
+}
