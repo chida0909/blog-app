@@ -80,8 +80,5 @@ export default {
     */
     extend (config, ctx) {
     }
-  },
-  router: {
-    middleware: "test"
   }
 }
