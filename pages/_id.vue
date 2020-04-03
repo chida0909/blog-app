@@ -17,6 +17,7 @@ import ContentMain from '@/components/ContentMain.vue'
 import ContentTag from '@/components/ContentTag.vue'
 
 export default {
+  middleware: 'test',
   components: {
     ContentTag,
     ContentMain

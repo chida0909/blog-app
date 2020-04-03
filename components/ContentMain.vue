@@ -104,3 +104,20 @@ hr {
   margin: 8px;
 }
 </style>
+
+<style>
+.v-application code {
+  color: #424242;
+  box-shadow: none;
+  width: 100%;
+  font-weight: 1;
+  padding: 8px;
+}
+.v-application code:after,
+.v-application code:before {
+  content: "";
+}
+pre {
+  margin-bottom: 16px;
+}
+</style>
