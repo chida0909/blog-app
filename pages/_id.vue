@@ -39,30 +39,8 @@ export default {
 
     const content = require(`@/posts/json/${postDate}.json`)
 
-    if ( content.bodyHtml.includes("<h1>")) {
-      content.bodyHtml = content.bodyHtml.replace(/<h1>/g, "<h1 style='margin: 16px 0 16px 0; border-bottom: 1px solid #ddd;'>")
-    }
-
-    if ( content.bodyHtml.includes("<h2>")) {
-      content.bodyHtml = content.bodyHtml.replace(/<h2>/g, "<h2 style='margin: 16px 0;'>")
-    }
-
-    if (!Array.isArray(content.tags)) {
-      if ( content.tags.includes(",")) {
-        content.tags = content.tags.split(",")
-      } else {
-        content.tags = [content.tags]
-      }
-    }
-
-    // ファイル名から投稿日を取得
-    if (!Array.isArray(content.postDate)) {
-      content.postDate = content.base.replace(/[^0-9]/g, '')
-    }
-
-
     // h1を起点とした目次の作成
-    const headTextTmp = content.bodyHtml.split(/<h1 style='margin: 16px 0 16px 0; border-bottom: 1px solid #ddd;'>|<h2 style='margin: 16px 0;'>/)
+    const headTextTmp = content.bodyHtml.split(/<h1>|<h2>/)
     // 正しく取得出来ていないケースがあったのでfilterでチェック
     const headText = headTextTmp.filter(h => h.match(/h1|h2/))
 
@@ -80,6 +58,33 @@ export default {
       }
     })
     content.tableOfContents = tableOfContents.filter(h => h)
+
+    // string型のhtmlをhtmlタグとして取得
+    const element = document.createElement('div')
+    element.innerHTML = content.bodyHtml;
+
+    // ページ内リンクを生成するためid属性を付与
+    let elements = element.querySelectorAll('h2, h1')
+
+    Array.prototype.forEach.call(elements, function(element, index) {
+      element.setAttribute('id', `heading-${index}`)
+    });
+
+    // v-htmlを使うため、htmlタグをstring型に変換
+    content.bodyHtml = `${element.innerHTML}`
+
+    if (!Array.isArray(content.tags)) {
+      if ( content.tags.includes(",") ) {
+        content.tags = content.tags.split(",")
+      } else {
+        content.tags = [content.tags]
+      }
+    }
+
+    // ファイル名から投稿日を取得
+    if (!Array.isArray(content.postDate)) {
+      content.postDate = content.base.replace(/[^0-9]/g, '')
+    }
 
     // デバイス情報を取得（smartphone or pc）
     content.deviceType = context.$ua.deviceType()

@@ -137,4 +137,14 @@ table th, table td {
   border: solid 1px gray;
   padding: 8px;
 }
+h1 {
+  border-bottom: 1px solid #ddd;
+  margin: 16px 0;
+}
+h2 {
+  margin: 16px 0;
+}
+.cursor {
+  cursor: pointer;
+}
 </style>

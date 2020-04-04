@@ -78,10 +78,7 @@ export default {
 }
 </script>
 
-<style>
-.cursor {
-  cursor: pointer;
-}
+<style scoped>
 .header-tltle {
   font-weight: bold;
   margin-top: 4%;

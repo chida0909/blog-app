@@ -76,9 +76,6 @@ export default {
   object-fit: cover;
   height: 248px;
 }
-.top-cards {
-  cursor: pointer;
-}
 .top-date {
   padding-bottom: 0;
 }

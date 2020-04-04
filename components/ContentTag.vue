@@ -14,7 +14,14 @@
       :key="index"
       class="table-content"
     >
-    {{content}}
+      <nuxt-link
+        v-scroll-to="`#heading-${index}`"
+        to
+        tag="div"
+        class="cursor"
+      >
+        {{content}}
+      </nuxt-link>
     </v-card-text>
     <div class="table-content-botton">
       <v-btn
@@ -34,6 +41,7 @@
 </template>
 
 <script>
+import VueScrollTo from 'vue-scrollto'
 export default {
   props: ["contentTag"]
 }

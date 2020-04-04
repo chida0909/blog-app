@@ -48,7 +48,8 @@ export default {
   */
   modules: [
     'nuxt-user-agent',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'vue-scrollto/nuxt',
   ],
   /*
   ** vuetify module configuration
