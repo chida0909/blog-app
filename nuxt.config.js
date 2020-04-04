@@ -83,17 +83,17 @@ export default {
     extend (config, ctx) {
       config.performance.maxAssetSize = 300000;
     }
-  },
-  generate: {
-    routes() {
-      const jsonData = require(`@/posts/summary.json`)
-      // ファイル名の一覧を取得
-      const postDates = jsonData.sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
-      // 記事一覧を生成
-      const contents = postDates.map( p => fileMap[`posts/json/${p}.json`] )
-      const content = contents.map( p => p.permalink )
-      console.log(content)
-      return content
-    }
   }
+  // ,generate: {
+  //   routes() {
+  //     const jsonData = require(`@/posts/summary.json`)
+  //     // ファイル名の一覧を取得
+  //     const postDates = jsonData.sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
+  //     // 記事一覧を生成
+  //     const contents = postDates.map( p => fileMap[`posts/json/${p}.json`] )
+  //     const content = contents.map( p => p.permalink )
+  //     console.log(content)
+  //     return content
+  //   }
+  // }
 }
