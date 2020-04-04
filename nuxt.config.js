@@ -1,5 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
-import jsonData from '@/posts/summary.json'
+const jsonData = require('@/posts/summary.json')
 
 export default {
 
