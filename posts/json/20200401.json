@@ -1,5 +1,4 @@
 {
-  "id": 2,
   "title": "Nuxt.jsの各ディレクトリの役割",
   "permalink": "nuxt-directory-role",
   "description": "Nuxtの各ディレクトリの役割について仕様をまとめました。",

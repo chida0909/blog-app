@@ -3,7 +3,7 @@
     <v-app-bar
       dark
       shrink-on-scroll
-      src="/posts/header.jpg"
+      src="/images/header.jpg"
     >
       <template v-slot:img="{ props }">
         <v-img
@@ -33,7 +33,7 @@
       padless
     >
       <v-img
-        src="/posts/footer.jpg"
+        src="/images/footer.jpg"
         height="100px"
         gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
         class="white--text align-center text-center"

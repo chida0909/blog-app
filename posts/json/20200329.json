@@ -1,0 +1,14 @@
+{
+  "title": "Nuxt.jsでCSSを共通化する方法",
+  "permalink": "nuxt-css-common",
+  "description": "Nuxt.js",
+  "created_at": "2020-03-29T00:00:00.000Z",
+  "tags": "Nuxt",
+  "bodyContent": "Nuxt.jsで複数のコンポーネントに同じCSSを書いていたため、CSSを共通化しました。その時の備忘録です。  \n\n公式サイト[API: css プロパティ - NuxtJS](https://ja.nuxtjs.org/api/configuration-css/)を参考にします。  \n\n## 手順\n1. assetsディレクトリ配下にCSSディレクトリを作成します。  \n2. main.cssファイルを作成します。  \n3. nuxt.config.jsにcssのpathを指定する箇所があるので、main.cssのpathを指定します。  \n  \n&#13;&#10;\n  \n```\n  /*\n  ** Global CSS\n  */\n  css: [\n      '@/assets/css/main.css'\n  ],\n```\n\npathの中にある「@」は「~」のエイリアスです。",
+  "bodyHtml": "<p>Nuxt.jsで複数のコンポーネントに同じCSSを書いていたため、CSSを共通化しました。その時の備忘録です。</p>\n<p>公式サイト<a href=\"https://ja.nuxtjs.org/api/configuration-css/\">API: css プロパティ - NuxtJS</a>を参考にします。</p>\n<h2>手順</h2>\n<ol>\n<li>assetsディレクトリ配下にCSSディレクトリを作成します。</li>\n<li>main.cssファイルを作成します。</li>\n<li>nuxt.config.jsにcssのpathを指定する箇所があるので、main.cssのpathを指定します。</li>\n</ol>\n<p>\r\n</p>\n<pre><code>  /*\n  ** Global CSS\n  */\n  css: [\n      '@/assets/css/main.css'\n  ],\n</code></pre>\n<p>pathの中にある「@」は「~」のエイリアスです。</p>\n",
+  "dir": "posts/json",
+  "base": "20200329.json",
+  "ext": ".json",
+  "sourceBase": "20200329.md",
+  "sourceExt": ".md"
+}
