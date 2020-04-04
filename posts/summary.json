@@ -1,29 +1,16 @@
 {
   "fileMap": {
-    "posts/json/20200403.json": {
-      "id": 4,
-      "title": "middlewareを使い関数を共通化する",
-      "permalink": "nuxt-middleware-function",
+    "posts/json/20200404.json": {
+      "id": 5,
+      "title": "JavaScriptの配列処理について",
+      "permalink": "js-array-processing",
       "description": null,
-      "created_at": "2020-04-03T00:00:00.000Z",
-      "tags": "nuxt",
+      "created_at": "2020-04-04T00:00:00.000Z",
+      "tags": "JavaScript",
       "dir": "posts/json",
-      "base": "20200403.json",
+      "base": "20200404.json",
       "ext": ".json",
-      "sourceBase": "20200403.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200328.json": {
-      "id": 1,
-      "title": "Nuxt.jsのAPIを読み解く",
-      "permalink": "nuxt-api-decipher",
-      "description": "NuxtのAPIについて、箇条書きで仕様をまとめました。",
-      "created_at": "2020-03-28T00:00:00.000Z",
-      "tags": "nuxt",
-      "dir": "posts/json",
-      "base": "20200328.json",
-      "ext": ".json",
-      "sourceBase": "20200328.md",
+      "sourceBase": "20200404.md",
       "sourceExt": ".md"
     },
     "posts/json/20200402.json": {
@@ -39,6 +26,19 @@
       "sourceBase": "20200402.md",
       "sourceExt": ".md"
     },
+    "posts/json/20200403.json": {
+      "id": 4,
+      "title": "middlewareを使い関数を共通化する",
+      "permalink": "nuxt-middleware-function",
+      "description": null,
+      "created_at": "2020-04-03T00:00:00.000Z",
+      "tags": "nuxt",
+      "dir": "posts/json",
+      "base": "20200403.json",
+      "ext": ".json",
+      "sourceBase": "20200403.md",
+      "sourceExt": ".md"
+    },
     "posts/json/20200401.json": {
       "id": 2,
       "title": "Nuxt.jsの各ディレクトリの役割",
@@ -51,12 +51,26 @@
       "ext": ".json",
       "sourceBase": "20200401.md",
       "sourceExt": ".md"
+    },
+    "posts/json/20200328.json": {
+      "id": 1,
+      "title": "Nuxt.jsのAPIを読み解く",
+      "permalink": "nuxt-api-decipher",
+      "description": "NuxtのAPIについて、箇条書きで仕様をまとめました。",
+      "created_at": "2020-03-28T00:00:00.000Z",
+      "tags": "nuxt",
+      "dir": "posts/json",
+      "base": "20200328.json",
+      "ext": ".json",
+      "sourceBase": "20200328.md",
+      "sourceExt": ".md"
     }
   },
   "sourceFileArray": [
     "./posts/markdown/20200328.md",
     "./posts/markdown/20200401.md",
     "./posts/markdown/20200402.md",
-    "./posts/markdown/20200403.md"
+    "./posts/markdown/20200403.md",
+    "./posts/markdown/20200404.md"
   ]
 }

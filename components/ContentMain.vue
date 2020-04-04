@@ -7,7 +7,7 @@
   >
     <v-card class="main-content">
       <v-img
-        :src="`/posts/${contentMain.id}.jpg`"
+        :src="`/posts/${contentMain.postDate}.jpg`"
         height="250px"
       />
       <v-card-text class="main-date">
@@ -105,7 +105,13 @@ hr {
 }
 </style>
 
+
 <style>
+/*
+ * vuetifyを上書きしている
+ * 全コンポーネントに影響を与えているため、別ファイル化する
+ */
+
 .v-application code {
   color: #424242;
   box-shadow: none;
@@ -119,5 +125,16 @@ hr {
 }
 pre {
   margin-bottom: 16px;
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  table-layout: fixed;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+table th, table td {
+  border: solid 1px gray;
+  padding: 8px;
 }
 </style>

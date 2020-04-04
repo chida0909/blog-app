@@ -34,6 +34,14 @@ export default {
       // 対象外を除外
       const contents = contentsList.filter( c => c )
 
+
+      // ファイル名から投稿日を取得
+      if (!Array.isArray(contents[0].postDate)) {
+        for (let i in contents) {
+          contents[i].postDate = contents[i].base.replace(/[^0-9]/g, '')
+        }
+      }
+
       // タグを配列に変換
       if (!Array.isArray(contents[0].tags)) {
         for (let i in contents) {

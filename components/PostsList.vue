@@ -17,7 +17,7 @@
           tag="div"
         >
           <v-img
-           :src="`/posts/${content.id}.jpg`"
+           :src="`/posts/${content.postDate}.jpg`"
            class="top-images"
            height="225px"
           />

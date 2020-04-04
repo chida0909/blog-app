@@ -55,6 +55,12 @@ export default {
       }
     }
 
+    // ファイル名から投稿日を取得
+    if (!Array.isArray(content.postDate)) {
+      content.postDate = content.base.replace(/[^0-9]/g, '')
+    }
+
+
     // h1を起点とした目次の作成
     const headTextTmp = content.bodyHtml.split(/<h1 style='margin: 16px 0 16px 0; border-bottom: 1px solid #ddd;'>|<h2 style='margin: 16px 0;'>/)
     // 正しく取得出来ていないケースがあったのでfilterでチェック
