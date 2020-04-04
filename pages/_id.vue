@@ -52,16 +52,11 @@ export default {
       const headText = headTextTmp.filter(h => h.match(/h1|h2/))
 
       const tableOfContents = headText.map( h => {
-        if (h.match(/h1/)) {
-          const headTextSub1 = h.indexOf("</h1>")
-          if (headTextSub1 > 0) {
-            return h.substring(0, headTextSub1)
-          }
-        } else if (h.match(/h2/)) {
-          const headTextSub2 = h.indexOf("</h2>")
-          if (headTextSub2 > 0) {
-            return "　" + h.substring(0, headTextSub2)
-          }
+        if (h.match(/h1/) && h.indexOf("</h1>") > 0) {
+          return h.substring(0, h.indexOf("</h1>"))
+        }
+        if (h.match(/h2/) && h.indexOf("</h2>") > 0) {
+          return "　" + h.substring(0, h.indexOf("</h2>"))
         }
       })
       content.tableOfContents = tableOfContents.filter(h => h)
@@ -71,11 +66,8 @@ export default {
       element.innerHTML = content.bodyHtml;
 
       // ページ内リンクを生成するためid属性を付与
-      let elements = element.querySelectorAll('h2, h1')
-
-      Array.prototype.forEach.call(elements, function(element, index) {
-        element.setAttribute('id', `heading-${index}`)
-      });
+      let elements = Array.from(element.querySelectorAll('h1, h2'))
+      elements.forEach( (element, index) => element.setAttribute('id', `heading-${index}`) )
 
       // v-htmlを使うため、htmlタグをstring型に変換
       content.bodyHtml = `${element.innerHTML}`
@@ -86,7 +78,7 @@ export default {
         content.tags = [content.tags]
       }
 
-    // ファイル名から投稿日を取得
+      // ファイル名から投稿日を取得
       content.postDate = content.base.replace(/[^0-9]/g, '')
     }
 
