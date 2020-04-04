@@ -30,6 +30,8 @@ export default {
     }
   },
   asyncData(context) {
+    console.log(context)
+
     // contextを使いため、context.paramsを利用
     const params = context.params
     // ファイル名の一覧を取得
