@@ -40,8 +40,6 @@ export default {
       }
     }
 
-    console.log(contents)
-
     return { contents }
   },
   head() {
