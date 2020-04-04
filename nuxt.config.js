@@ -86,9 +86,11 @@ export default {
   },
   generate: {
     routes() {
-      const jsonData = require('./posts/summary.json')
-      const postDates = jsonData.sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
-      const contents = postDates.map( p => fileMap[`posts/json/${p}.json`] )
+      // const jsonData = require('./posts/summary.json')
+      const jsonData = [ '20200328', '20200329' ]
+      // const postDates = jsonData.map( s => s.replace(/[^0-9]/g, '') )
+      // const postDates = jsonData.sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
+      const contents = jsonData.map( p => fileMap[`posts/json/${p}.json`] )
       return contents.map( p => p.permalink )
     }
   }
