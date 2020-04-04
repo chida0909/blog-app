@@ -2,7 +2,7 @@
   "id": 3,
   "title": "VuetifyのCSSを上書きする方法",
   "permalink": "vuetify-css-overwrite",
-  "description": null,
+  "description": "VuetifyのCSSを上書きする方法を書きます。",
   "created_at": "2020-04-02T00:00:00.000Z",
   "tags": "vuetify",
   "bodyContent": "## 結論\nstyleタグにscopedを使わないことで上書きできます。\n\n## コード\n\n.vueファイルでstyleタグを指定する時は以下のようにします。\n\n対応前\n\n```\n<style scoped>\n</style>\n```\n\n対応後\n```\n<style>\n</style>\n```",
