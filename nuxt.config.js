@@ -90,7 +90,11 @@ export default {
     routes() {
       const dateArray = jsonData.sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
       const contents = dateArray.map( p => jsonData.fileMap[`posts/json/${p}.json`] )
-      return contents.map( p => p.permalink )
+      const postList = contents.map( p => p.permalink )
+      // const tagList = [
+      //   '/tags/nuxt',
+      //   '/tags/uxt',
+      // ]
     }
   }
 }

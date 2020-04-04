@@ -26,7 +26,7 @@
               outlined
               nuxt
               color="grey darken-3"
-              :to="`/tags/${tag}`"
+              :to="`/tags/${tag.toLowerCase()}`"
               class="tag-btton"
             >
               {{tag}}

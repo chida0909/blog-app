@@ -26,14 +26,13 @@ export default {
 
       // 記事一覧を生成
       const contentsList = postDates.map( postDate => {
-        if (fileMap[`posts/json/${postDate}.json`].tags.includes(params.id)) {
+        if (fileMap[`posts/json/${postDate}.json`].tags[0].toLowerCase() === params.id) {
           return fileMap[`posts/json/${postDate}.json`]
         }
       })
 
       // 対象外を除外
       const contents = contentsList.filter( c => c )
-
 
       // ファイル名から投稿日を取得
       if (!Array.isArray(contents[0].postDate)) {
