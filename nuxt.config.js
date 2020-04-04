@@ -1,6 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
+import jsonData from '@/posts/summary.json'
 
 export default {
+
   mode: 'spa',
   /*
   ** Headers of the page
@@ -86,10 +88,9 @@ export default {
   },
   generate: {
     routes() {
-      const jsonData = require('@/posts/summary.json')
       const date = jsonData.sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
-      // const contents = postDates.map( p => fileMap[`posts/json/${p}.json`] )
-      // return contents.map( p => p.permalink )
+      const contents = date.map( p => fileMap[`posts/json/${p}.json`] )
+      return contents.map( p => p.permalink )
     }
   }
 }
