@@ -12,28 +12,16 @@
       "sourceBase": "20200402.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200403.json": {
-      "title": "Nuxt.jsのmiddlewareを使う",
-      "permalink": "nuxt-middleware-use",
-      "description": "Nuxt.jsのMiddlewareを使うことで、レンダリングするよりも前に実行される関数を定義できます。",
-      "created_at": "2020-04-03T00:00:00.000Z",
+    "posts/json/20200328.json": {
+      "title": "Nuxt.jsの各APIの役割",
+      "permalink": "nuxt-api-decipher",
+      "description": "NuxtのAPIについて、理解を深めるため仕様をまとめました。",
+      "created_at": "2020-03-28T00:00:00.000Z",
       "tags": "Nuxt",
       "dir": "posts/json",
-      "base": "20200403.json",
+      "base": "20200328.json",
       "ext": ".json",
-      "sourceBase": "20200403.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200404.json": {
-      "title": "JavaScriptの配列処理について",
-      "permalink": "js-array-processing",
-      "description": "配列操作について何気なく使っていたので整理しました。",
-      "created_at": "2020-04-04T00:00:00.000Z",
-      "tags": "JavaScript",
-      "dir": "posts/json",
-      "base": "20200404.json",
-      "ext": ".json",
-      "sourceBase": "20200404.md",
+      "sourceBase": "20200328.md",
       "sourceExt": ".md"
     },
     "posts/json/20200401.json": {
@@ -60,16 +48,28 @@
       "sourceBase": "20200329.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200328.json": {
-      "title": "Nuxt.jsの各APIの役割",
-      "permalink": "nuxt-api-decipher",
-      "description": "NuxtのAPIについて、理解を深めるため仕様をまとめました。",
-      "created_at": "2020-03-28T00:00:00.000Z",
+    "posts/json/20200403.json": {
+      "title": "Nuxt.jsのmiddlewareを使う",
+      "permalink": "nuxt-middleware-use",
+      "description": "Nuxt.jsのMiddlewareを使うことで、レンダリングするよりも前に実行される関数を定義できます。",
+      "created_at": "2020-04-03T00:00:00.000Z",
       "tags": "Nuxt",
       "dir": "posts/json",
-      "base": "20200328.json",
+      "base": "20200403.json",
       "ext": ".json",
-      "sourceBase": "20200328.md",
+      "sourceBase": "20200403.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200404.json": {
+      "title": "JavaScriptの配列処理について",
+      "permalink": "js-array-processing",
+      "description": "配列操作について何気なく使っていたので整理しました。",
+      "created_at": "2020-04-04T00:00:00.000Z",
+      "tags": "JavaScript",
+      "dir": "posts/json",
+      "base": "20200404.json",
+      "ext": ".json",
+      "sourceBase": "20200404.md",
       "sourceExt": ".md"
     }
   },

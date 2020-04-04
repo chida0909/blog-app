@@ -90,7 +90,8 @@ export default {
       const postDates = jsonData.sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
       // 記事一覧を生成
       const contents = postDates.map( p => fileMap[`posts/json/${p}.json`] )
-      return contents.map( p => p.permalink )
+      const content = contents.map( p => p.permalink )
+      return content
     }
   }
 }
