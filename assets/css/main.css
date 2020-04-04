@@ -1,0 +1,37 @@
+code {
+  color: #424242 !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  font-weight: 1 !important;
+  padding: 16px !important;
+}
+code:after, code:before {
+  content: "" !important;
+}
+pre {
+  margin-bottom: 16px;
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  table-layout: fixed;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+table th, table td {
+  border: solid 1px gray;
+  padding: 8px;
+}
+h1 {
+  border-bottom: 1px solid #ddd;
+  margin: 16px 0;
+}
+h2 {
+  margin: 16px 0;
+}
+.cursor {
+  cursor: pointer;
+}
+.v-btn__content {
+  text-transform: none;
+}
