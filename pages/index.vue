@@ -22,10 +22,6 @@ export default {
   },
   asyncData() {
 
-    const jsonData = require('@/posts/summary.json')
-    const date = jsonData.sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
-    console.log( date )
-
     // ファイル名の一覧を取得
     const postDates = sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
     // 記事一覧を生成
