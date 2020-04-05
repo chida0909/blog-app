@@ -88,9 +88,18 @@ export default {
   },
   generate: {
     routes() {
+      // タグページ一覧
+      const tagPageArray = [
+        '/tags/nuxt',
+        '/tags/vuetify',
+        '/tags/javascript'
+      ]
+      // 記事ページ一覧
       const dateArray = jsonData.sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
       const contents = dateArray.map( p => jsonData.fileMap[`posts/json/${p}.json`] )
-      return contents.map( p => p.permalink )
+      const permalinkArray = contents.map( p => p.permalink )
+      const result = `${tagPageArray},${permalinkArray}`
+      return result.split(',')
     }
   }
 }
