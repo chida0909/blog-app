@@ -16,11 +16,12 @@ export default {
   },
   data() {
     return {
-      title: 'Chida Blog',
+      title: this.$constant.title,
       contents: {}
     }
   },
   asyncData() {
+    console.log('asyncData')
 
     // ファイル名の一覧を取得
     const postDates = sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )

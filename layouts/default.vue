@@ -62,7 +62,7 @@
 export default {
   data () {
     return {
-      title: 'Chida Blog',
+      title: this.$constant.title,
       links: []
     }
   },
