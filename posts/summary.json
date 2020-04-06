@@ -12,30 +12,6 @@
       "sourceBase": "20200330.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200401.json": {
-      "title": "Nuxt.jsの各ディレクトリの役割",
-      "permalink": "nuxt-directory-role",
-      "description": "Nuxtの各ディレクトリの役割について仕様をまとめました。",
-      "created_at": "2020-04-01T00:00:00.000Z",
-      "tags": "Nuxt",
-      "dir": "posts/json",
-      "base": "20200401.json",
-      "ext": ".json",
-      "sourceBase": "20200401.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200402.json": {
-      "title": "VuetifyのCSSを上書きする方法",
-      "permalink": "vuetify-css-overwrite",
-      "description": "VuetifyのCSSを上書きする方法を書きます。",
-      "created_at": "2020-04-02T00:00:00.000Z",
-      "tags": "Vuetify",
-      "dir": "posts/json",
-      "base": "20200402.json",
-      "ext": ".json",
-      "sourceBase": "20200402.md",
-      "sourceExt": ".md"
-    },
     "posts/json/20200328.json": {
       "title": "Nuxt.jsの各APIの役割",
       "permalink": "nuxt-api-decipher",
@@ -48,28 +24,16 @@
       "sourceBase": "20200328.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200329.json": {
-      "title": "Nuxt.jsでCSSを共通化する方法",
-      "permalink": "nuxt-css-common",
-      "description": "Nuxt.js",
-      "created_at": "2020-03-29T00:00:00.000Z",
+    "posts/json/20200401.json": {
+      "title": "Nuxt.jsの各ディレクトリの役割",
+      "permalink": "nuxt-directory-role",
+      "description": "Nuxtの各ディレクトリの役割について仕様をまとめました。",
+      "created_at": "2020-04-01T00:00:00.000Z",
       "tags": "Nuxt",
       "dir": "posts/json",
-      "base": "20200329.json",
+      "base": "20200401.json",
       "ext": ".json",
-      "sourceBase": "20200329.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200406.json": {
-      "title": "Vue.jsのスタイルガイトまとめ",
-      "permalink": "vue-style-guide",
-      "description": null,
-      "created_at": "2020-04-06T00:00:00.000Z",
-      "tags": "Vue",
-      "dir": "posts/json",
-      "base": "20200406.json",
-      "ext": ".json",
-      "sourceBase": "20200406.md",
+      "sourceBase": "20200401.md",
       "sourceExt": ".md"
     },
     "posts/json/20200403.json": {
@@ -84,16 +48,28 @@
       "sourceBase": "20200403.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200404.json": {
-      "title": "JavaScriptの配列処理について",
-      "permalink": "js-array-processing",
-      "description": "配列操作について何気なく使っていたので整理しました。",
-      "created_at": "2020-04-04T00:00:00.000Z",
-      "tags": "JavaScript",
+    "posts/json/20200402.json": {
+      "title": "VuetifyのCSSを上書きする方法",
+      "permalink": "vuetify-css-overwrite",
+      "description": "VuetifyのCSSを上書きする方法を書きます。",
+      "created_at": "2020-04-02T00:00:00.000Z",
+      "tags": "Vuetify",
       "dir": "posts/json",
-      "base": "20200404.json",
+      "base": "20200402.json",
       "ext": ".json",
-      "sourceBase": "20200404.md",
+      "sourceBase": "20200402.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200329.json": {
+      "title": "Nuxt.jsでCSSを共通化する方法",
+      "permalink": "nuxt-css-common",
+      "description": "Nuxt.js",
+      "created_at": "2020-03-29T00:00:00.000Z",
+      "tags": "Nuxt",
+      "dir": "posts/json",
+      "base": "20200329.json",
+      "ext": ".json",
+      "sourceBase": "20200329.md",
       "sourceExt": ".md"
     },
     "posts/json/20200405.json": {
@@ -106,6 +82,30 @@
       "base": "20200405.json",
       "ext": ".json",
       "sourceBase": "20200405.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200406.json": {
+      "title": "Vue.jsのスタイルガイドまとめ",
+      "permalink": "vue-style-guide",
+      "description": null,
+      "created_at": "2020-04-06T00:00:00.000Z",
+      "tags": "Vue",
+      "dir": "posts/json",
+      "base": "20200406.json",
+      "ext": ".json",
+      "sourceBase": "20200406.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200404.json": {
+      "title": "JavaScriptの配列処理について",
+      "permalink": "js-array-processing",
+      "description": "配列操作について何気なく使っていたので整理しました。",
+      "created_at": "2020-04-04T00:00:00.000Z",
+      "tags": "JavaScript",
+      "dir": "posts/json",
+      "base": "20200404.json",
+      "ext": ".json",
+      "sourceBase": "20200404.md",
       "sourceExt": ".md"
     }
   },
