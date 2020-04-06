@@ -10,7 +10,7 @@
     </v-card-title>
     <hr class="hr">
     <v-card-text
-      v-for="(content, index) in contentTag"
+      v-for="(content, index) in contentHeading"
       :key="index"
       class="table-content"
     >
@@ -43,7 +43,10 @@
 <script>
 import VueScrollTo from 'vue-scrollto'
 export default {
-  props: ["contentTag"]
+  props: {
+    contentHeading: Array,
+    required: true
+  },
 }
 </script>
 

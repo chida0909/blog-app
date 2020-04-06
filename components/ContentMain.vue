@@ -51,7 +51,18 @@
 
 <script>
 export default {
-  props: ["contentMain"],
+  props: {
+    contentMain: {
+      type: Object,
+      required: true,
+      validator (value) {
+        // 必要なkeyが全て存在するかチェック
+        const objectKeys = Object.keys( value )
+        const contentArray = ['postDate', 'created_at', 'tags', 'bodyHtml', 'title']
+        return contentArray.every( needKey => objectKeys.includes(needKey) )
+      }
+    }
+  },
   filters: {
     contentDate(val) {
       const date = new Date(val)

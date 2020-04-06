@@ -3,7 +3,7 @@
     <v-content>
       <v-container>
         <v-row justify="center">
-          <ContentTag :contentTag="content.tableOfContents" v-if="content.deviceType === 'pc'" />
+          <contentHeading :contentHeading="content.tableOfContents" v-if="content.deviceType === 'pc'" />
           <ContentMain :contentMain="content" />
         </v-row>
       </v-container>
@@ -14,11 +14,11 @@
 <script>
 import { sourceFileArray, fileMap } from '@/posts/summary.json'
 import ContentMain from '@/components/ContentMain.vue'
-import ContentTag from '@/components/ContentTag.vue'
+import contentHeading from '@/components/contentHeading.vue'
 
 export default {
   components: {
-    ContentTag,
+    contentHeading,
     ContentMain
   },
   data () {
