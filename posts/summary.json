@@ -1,17 +1,5 @@
 {
   "fileMap": {
-    "posts/json/20200330.json": {
-      "title": "Nuxt.jsのpluginsを使う",
-      "permalink": "nuxt-plugins-use",
-      "description": null,
-      "created_at": "2020-03-30T00:00:00.000Z",
-      "tags": "Nuxt",
-      "dir": "posts/json",
-      "base": "20200330.json",
-      "ext": ".json",
-      "sourceBase": "20200330.md",
-      "sourceExt": ".md"
-    },
     "posts/json/20200328.json": {
       "title": "Nuxt.jsの各APIの役割",
       "permalink": "nuxt-api-decipher",
@@ -22,6 +10,30 @@
       "base": "20200328.json",
       "ext": ".json",
       "sourceBase": "20200328.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200329.json": {
+      "title": "Nuxt.jsでCSSを共通化する方法",
+      "permalink": "nuxt-css-common",
+      "description": "Nuxt.js",
+      "created_at": "2020-03-29T00:00:00.000Z",
+      "tags": "Nuxt",
+      "dir": "posts/json",
+      "base": "20200329.json",
+      "ext": ".json",
+      "sourceBase": "20200329.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200330.json": {
+      "title": "Nuxt.jsのpluginsを使う",
+      "permalink": "nuxt-plugins-use",
+      "description": null,
+      "created_at": "2020-03-30T00:00:00.000Z",
+      "tags": "Nuxt",
+      "dir": "posts/json",
+      "base": "20200330.json",
+      "ext": ".json",
+      "sourceBase": "20200330.md",
       "sourceExt": ".md"
     },
     "posts/json/20200401.json": {
@@ -60,18 +72,6 @@
       "sourceBase": "20200402.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200329.json": {
-      "title": "Nuxt.jsでCSSを共通化する方法",
-      "permalink": "nuxt-css-common",
-      "description": "Nuxt.js",
-      "created_at": "2020-03-29T00:00:00.000Z",
-      "tags": "Nuxt",
-      "dir": "posts/json",
-      "base": "20200329.json",
-      "ext": ".json",
-      "sourceBase": "20200329.md",
-      "sourceExt": ".md"
-    },
     "posts/json/20200405.json": {
       "title": "nuxt generateの動的ルーティングについて",
       "permalink": "nuxt-generate-routes",
@@ -84,18 +84,6 @@
       "sourceBase": "20200405.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200406.json": {
-      "title": "Vue.jsのスタイルガイドまとめ",
-      "permalink": "vue-style-guide",
-      "description": null,
-      "created_at": "2020-04-06T00:00:00.000Z",
-      "tags": "Vue",
-      "dir": "posts/json",
-      "base": "20200406.json",
-      "ext": ".json",
-      "sourceBase": "20200406.md",
-      "sourceExt": ".md"
-    },
     "posts/json/20200404.json": {
       "title": "JavaScriptの配列処理について",
       "permalink": "js-array-processing",
@@ -106,6 +94,18 @@
       "base": "20200404.json",
       "ext": ".json",
       "sourceBase": "20200404.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200406.json": {
+      "title": "Vue.jsのスタイルガイドまとめ",
+      "permalink": "vue-style-guide",
+      "description": null,
+      "created_at": "2020-04-06T00:00:00.000Z",
+      "tags": "Vue",
+      "dir": "posts/json",
+      "base": "20200406.json",
+      "ext": ".json",
+      "sourceBase": "20200406.md",
       "sourceExt": ".md"
     }
   },
