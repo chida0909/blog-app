@@ -12,16 +12,16 @@
       "sourceBase": "20200328.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200329.json": {
-      "title": "Nuxt.jsでCSSを共通化する方法",
-      "permalink": "nuxt-css-common",
-      "description": "Nuxt.js",
-      "created_at": "2020-03-29T00:00:00.000Z",
+    "posts/json/20200401.json": {
+      "title": "Nuxt.jsの各ディレクトリの役割",
+      "permalink": "nuxt-directory-role",
+      "description": "Nuxtの各ディレクトリの役割について仕様をまとめました。",
+      "created_at": "2020-04-01T00:00:00.000Z",
       "tags": "Nuxt",
       "dir": "posts/json",
-      "base": "20200329.json",
+      "base": "20200401.json",
       "ext": ".json",
-      "sourceBase": "20200329.md",
+      "sourceBase": "20200401.md",
       "sourceExt": ".md"
     },
     "posts/json/20200330.json": {
@@ -36,16 +36,16 @@
       "sourceBase": "20200330.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200401.json": {
-      "title": "Nuxt.jsの各ディレクトリの役割",
-      "permalink": "nuxt-directory-role",
-      "description": "Nuxtの各ディレクトリの役割について仕様をまとめました。",
-      "created_at": "2020-04-01T00:00:00.000Z",
+    "posts/json/20200329.json": {
+      "title": "Nuxt.jsでCSSを共通化する方法",
+      "permalink": "nuxt-css-common",
+      "description": "Nuxt.js",
+      "created_at": "2020-03-29T00:00:00.000Z",
       "tags": "Nuxt",
       "dir": "posts/json",
-      "base": "20200401.json",
+      "base": "20200329.json",
       "ext": ".json",
-      "sourceBase": "20200401.md",
+      "sourceBase": "20200329.md",
       "sourceExt": ".md"
     },
     "posts/json/20200403.json": {
@@ -97,9 +97,9 @@
       "sourceExt": ".md"
     },
     "posts/json/20200406.json": {
-      "title": "Vue.jsのスタイルガイドまとめ",
+      "title": "Vue.jsスタイルガイド深堀り 優先度A",
       "permalink": "vue-style-guide",
-      "description": null,
+      "description": "このページはVue.jsスタイルガイドの要約ではなく、個人的に調べた内容を肉付けした記事です。",
       "created_at": "2020-04-06T00:00:00.000Z",
       "tags": "Vue",
       "dir": "posts/json",
