@@ -23,7 +23,6 @@ export default {
   methods: {
     userDelete(index) {
       this.$delete(this.users, index)
-      console.log(index)
     }
   }
 }
