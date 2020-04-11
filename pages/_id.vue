@@ -3,7 +3,10 @@
     <v-content>
       <v-container>
         <v-row justify="center">
-          <contentHeading :contentHeading="content.tableOfContents" v-if="content.deviceType === 'pc'" />
+          <contentHeading
+            :contentHeading="content.tableOfContents"
+            v-if="content.deviceType === 'pc'"
+          />
           <ContentMain :contentMain="content" />
         </v-row>
       </v-container>
