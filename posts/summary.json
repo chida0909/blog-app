@@ -1,15 +1,15 @@
 {
   "fileMap": {
-    "posts/json/20200328.json": {
-      "title": "Nuxt.jsの各APIの役割",
-      "permalink": "nuxt-api-decipher",
-      "description": "NuxtのAPIについて、理解を深めるため仕様をまとめました。",
-      "created_at": "2020-03-28T00:00:00.000Z",
+    "posts/json/20200330.json": {
+      "title": "Nuxt.jsのpluginsを使う",
+      "permalink": "nuxt-plugins-use",
+      "description": null,
+      "created_at": "2020-03-30T00:00:00.000Z",
       "tags": "Nuxt",
       "dir": "posts/json",
-      "base": "20200328.json",
+      "base": "20200330.json",
       "ext": ".json",
-      "sourceBase": "20200328.md",
+      "sourceBase": "20200330.md",
       "sourceExt": ".md"
     },
     "posts/json/20200329.json": {
@@ -24,6 +24,18 @@
       "sourceBase": "20200329.md",
       "sourceExt": ".md"
     },
+    "posts/json/20200328.json": {
+      "title": "Nuxt.jsの各APIの役割",
+      "permalink": "nuxt-api-decipher",
+      "description": "NuxtのAPIについて、理解を深めるため仕様をまとめました。",
+      "created_at": "2020-03-28T00:00:00.000Z",
+      "tags": "Nuxt",
+      "dir": "posts/json",
+      "base": "20200328.json",
+      "ext": ".json",
+      "sourceBase": "20200328.md",
+      "sourceExt": ".md"
+    },
     "posts/json/20200401.json": {
       "title": "Nuxt.jsの各ディレクトリの役割",
       "permalink": "nuxt-directory-role",
@@ -36,16 +48,40 @@
       "sourceBase": "20200401.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200330.json": {
-      "title": "Nuxt.jsのpluginsを使う",
-      "permalink": "nuxt-plugins-use",
-      "description": null,
-      "created_at": "2020-03-30T00:00:00.000Z",
+    "posts/json/20200403.json": {
+      "title": "Nuxt.jsのmiddlewareを使う",
+      "permalink": "nuxt-middleware-use",
+      "description": "Nuxt.jsのMiddlewareを使うことで、レンダリングするよりも前に実行される関数を定義できます。",
+      "created_at": "2020-04-03T00:00:00.000Z",
       "tags": "Nuxt",
       "dir": "posts/json",
-      "base": "20200330.json",
+      "base": "20200403.json",
       "ext": ".json",
-      "sourceBase": "20200330.md",
+      "sourceBase": "20200403.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200405.json": {
+      "title": "nuxt generateの動的ルーティングについて",
+      "permalink": "nuxt-generate-routes",
+      "description": "Netlifyにデプロイして、その後に動的ルーティング対象のページででリロードするとNotFoundになる現象を確認しました。",
+      "created_at": "2020-04-05T00:00:00.000Z",
+      "tags": "Nuxt",
+      "dir": "posts/json",
+      "base": "20200405.json",
+      "ext": ".json",
+      "sourceBase": "20200405.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200402.json": {
+      "title": "VuetifyのCSSを上書きする方法",
+      "permalink": "vuetify-css-overwrite",
+      "description": "VuetifyのCSSを上書きする方法を書きます。",
+      "created_at": "2020-04-02T00:00:00.000Z",
+      "tags": "Vuetify",
+      "dir": "posts/json",
+      "base": "20200402.json",
+      "ext": ".json",
+      "sourceBase": "20200402.md",
       "sourceExt": ".md"
     },
     "posts/json/20200404.json": {
@@ -72,16 +108,16 @@
       "sourceBase": "20200406.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200405.json": {
-      "title": "nuxt generateの動的ルーティングについて",
-      "permalink": "nuxt-generate-routes",
-      "description": "Netlifyにデプロイして、その後に動的ルーティング対象のページででリロードするとNotFoundになる現象を確認しました。",
-      "created_at": "2020-04-05T00:00:00.000Z",
-      "tags": "Nuxt",
+    "posts/json/20200410.json": {
+      "title": "単一ファイルコンポーネントの命名規則",
+      "permalink": "vue-component-naming",
+      "description": "単一ファイルコンポーネントの命名規則についてまとめました。",
+      "created_at": "2020-04-11T00:00:00.000Z",
+      "tags": "Vue",
       "dir": "posts/json",
-      "base": "20200405.json",
+      "base": "20200410.json",
       "ext": ".json",
-      "sourceBase": "20200405.md",
+      "sourceBase": "20200410.md",
       "sourceExt": ".md"
     },
     "posts/json/20200407.json": {
@@ -96,40 +132,16 @@
       "sourceBase": "20200407.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200402.json": {
-      "title": "VuetifyのCSSを上書きする方法",
-      "permalink": "vuetify-css-overwrite",
-      "description": "VuetifyのCSSを上書きする方法を書きます。",
-      "created_at": "2020-04-02T00:00:00.000Z",
-      "tags": "Vuetify",
-      "dir": "posts/json",
-      "base": "20200402.json",
-      "ext": ".json",
-      "sourceBase": "20200402.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200410.json": {
-      "title": "単一ファイルコンポーネントの命名規則",
-      "permalink": "vue-component-naming",
-      "description": "単一ファイルコンポーネントの命名規則についてまとめました。",
-      "created_at": "2020-04-11T00:00:00.000Z",
+    "posts/json/20200414.json": {
+      "title": "Vue.jsでドラッグアンドドロップ",
+      "permalink": "vue-drag-drop",
+      "description": null,
+      "created_at": "2020-04-14T00:00:00.000Z",
       "tags": "Vue",
       "dir": "posts/json",
-      "base": "20200410.json",
+      "base": "20200414.json",
       "ext": ".json",
-      "sourceBase": "20200410.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200403.json": {
-      "title": "Nuxt.jsのmiddlewareを使う",
-      "permalink": "nuxt-middleware-use",
-      "description": "Nuxt.jsのMiddlewareを使うことで、レンダリングするよりも前に実行される関数を定義できます。",
-      "created_at": "2020-04-03T00:00:00.000Z",
-      "tags": "Nuxt",
-      "dir": "posts/json",
-      "base": "20200403.json",
-      "ext": ".json",
-      "sourceBase": "20200403.md",
+      "sourceBase": "20200414.md",
       "sourceExt": ".md"
     }
   },
@@ -144,6 +156,7 @@
     "./posts/markdown/20200405.md",
     "./posts/markdown/20200406.md",
     "./posts/markdown/20200407.md",
-    "./posts/markdown/20200410.md"
+    "./posts/markdown/20200410.md",
+    "./posts/markdown/20200414.md"
   ]
 }
