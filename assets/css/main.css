@@ -36,3 +36,6 @@ h2 {
 .v-btn__content {
   text-transform: none;
 }
+.main-article img {
+  width: 300px;
+}
