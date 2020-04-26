@@ -25,7 +25,10 @@ export default {
     ContentMain
   },
   data () {
-    return { content: '' }
+    return {
+      content: '',
+      page: ''
+    }
   },
   validate ({ params }) {
     if (params) {
@@ -48,7 +51,7 @@ export default {
       cache_flag = true
     }
 
-    if (cache_flag === false) {
+    if (!cache_flag) {
       // h1を起点とした目次の作成
       const headTextTmp = content.bodyHtml.split(/<h1>|<h2>/)
       // 正しく取得出来ていないケースがあったのでfilterでチェック
