@@ -24,3 +24,28 @@ Vue.jsにおいてMixinを用いる注意点と、Pluginで代用する方法
 
 https://codmon.kibe.la/notes/9174
 フロントエンドアーキテクチャ【技術選定編】
+
+
+## コールバック地獄
+以下のコードを実行すると「0, 1, 2, 3 ,4」とConsoleに出力されます。
+
+```js
+console.log(0);
+function sleep(error, callback) {
+  setTimeout(() => {
+    callback(1);
+  }, 1000);
+}
+
+sleep(result => {
+  console.log(result + 1);
+  sleep(result => {
+    console.log(result + 2);
+    sleep(result => {
+      console.log(result + 3);
+    });
+  });
+});
+
+console.log(1);
+```
