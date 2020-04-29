@@ -7,7 +7,6 @@
         :pageLength="pageLength"
         :pageChange="pageChange"
       />
-      {{hoge}}
     </v-container>
   </v-app>
 </template>
@@ -26,7 +25,6 @@ export default {
     return {
       title: this.$title,
       maxCount: this.$contentsMaxCount,
-      hoge: this.$myInjectedFunction,
       contents: [],
       pageCurrent: 1, // 初期表示は1から始める
       pageLength: 0
