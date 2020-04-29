@@ -7,6 +7,7 @@
         :pageLength="pageLength"
         :pageChange="pageChange"
       />
+      {{hoge}}
     </v-container>
   </v-app>
 </template>
@@ -24,6 +25,8 @@ export default {
   data() {
     return {
       title: this.$constant.title,
+      maxCount: this.$constant.contentsMaxCount,
+      hoge: this.$myInjectedFunction,
       contents: [],
       pageCurrent: 1, // 初期表示は1から始める
       pageLength: 0
@@ -42,6 +45,11 @@ export default {
       }
     }
 
+    console.log(context.app.$myInjectedFunction)
+
+    // pluginsから呼び出した定数
+    const MAX_COUNT = context.app.contentsMaxCount
+
     // タグを配列に変換
     if (!Array.isArray(contents[0].tags)) {
       for (let i in contents) {
@@ -50,7 +58,7 @@ export default {
     }
 
     // 全体のページ数を取得
-    const pageLength = Math.ceil(contents.length / 10)
+    const pageLength = Math.ceil(contents.length / MAX_COUNT)
     // ページング処理に使うため、一時的に保持
     const contentsAll = contents
 
@@ -58,15 +66,17 @@ export default {
   },
   methods: {
     pageChange( pageNumber ) {
+      const MAX_COUNT = this.maxCount
       this.contents = this.contentsAll
-      const startCount = pageNumber === 1 ? 0 : ( pageNumber - 1 ) * 10
-      const endCount = pageNumber * 10 - 1
+
+      const startCount = pageNumber === 1 ? 0 : ( pageNumber - 1 ) * MAX_COUNT
+      const endCount = pageNumber * MAX_COUNT - 1
       this.contents = this.contents.slice( startCount, endCount )
     }
   },
   mounted() {
     // Vueの要素がマウントされた後、最初のコンテンツの表示を確定させる処理
-    this.contents = this.contents.slice(0, 9)
+    this.contents = this.contents.slice(0, this.maxCount - 1)
   },
   head() {
     return {
