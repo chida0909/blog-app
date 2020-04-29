@@ -24,8 +24,8 @@ export default {
   },
   data() {
     return {
-      title: this.$constant.title,
-      maxCount: this.$constant.contentsMaxCount,
+      title: this.$title,
+      maxCount: this.$contentsMaxCount,
       hoge: this.$myInjectedFunction,
       contents: [],
       pageCurrent: 1, // 初期表示は1から始める
@@ -45,10 +45,8 @@ export default {
       }
     }
 
-    console.log(context.app.$myInjectedFunction)
-
     // pluginsから呼び出した定数
-    const MAX_COUNT = context.app.contentsMaxCount
+    const MAX_COUNT = context.app.$contentsMaxCount
 
     // タグを配列に変換
     if (!Array.isArray(contents[0].tags)) {
@@ -66,7 +64,7 @@ export default {
   },
   methods: {
     pageChange( pageNumber ) {
-      const MAX_COUNT = this.maxCount
+      const MAX_COUNT = this.$contentsMaxCount
       this.contents = this.contentsAll
 
       const startCount = pageNumber === 1 ? 0 : ( pageNumber - 1 ) * MAX_COUNT
@@ -80,7 +78,7 @@ export default {
   },
   head() {
     return {
-      title: this.title,
+      title: this.$title,
       meta: [
         { charset: 'utf-8' },
         // meta viewport Google推奨の記述
