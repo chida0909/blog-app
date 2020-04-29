@@ -2,6 +2,11 @@
   <v-app>
     <v-container fluid>
       <PostsList :contentsList="contents" />
+      <PagiNation
+        :pageCurrent="pageCurrent"
+        :pageLength="pageLength"
+        :pageChange="pageChange"
+      />
     </v-container>
   </v-app>
 </template>
@@ -9,22 +14,26 @@
 <script>
 import { sourceFileArray, fileMap } from '@/posts/summary.json'
 import PostsList from '@/components/PostsList.vue'
+import PagiNation from '@/components/PagiNation.vue'
 
 export default {
   components: {
-    PostsList
+    PostsList,
+    PagiNation
   },
   data() {
     return {
       title: this.$constant.title,
-      contents: {}
+      contents: [],
+      pageCurrent: 1, // 初期表示は1から始める
+      pageLength: 0
     }
   },
-  asyncData() {
+  asyncData(context) {
     // ファイル名の一覧を取得
     const postDates = sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
     // 記事一覧を生成
-    const contents = postDates.map( p => fileMap[`posts/json/${p}.json`] )
+    let contents = postDates.map( p => fileMap[`posts/json/${p}.json`] )
 
     // ファイル名から投稿日を取得
     if (!Array.isArray(contents[0].postDate)) {
@@ -40,7 +49,24 @@ export default {
       }
     }
 
-    return { contents }
+    // 全体のページ数を取得
+    const pageLength = Math.ceil(contents.length / 10)
+    // ページング処理に使うため、一時的に保持
+    const contentsAll = contents
+
+    return { contents, pageLength, contentsAll }
+  },
+  methods: {
+    pageChange( pageNumber ) {
+      this.contents = this.contentsAll
+      const startCount = pageNumber === 1 ? 0 : ( pageNumber - 1 ) * 10
+      const endCount = pageNumber * 10 - 1
+      this.contents = this.contents.slice( startCount, endCount )
+    }
+  },
+  mounted() {
+    // Vueの要素がマウントされた後、最初のコンテンツの表示を確定させる処理
+    this.contents = this.contents.slice(0, 9)
   },
   head() {
     return {

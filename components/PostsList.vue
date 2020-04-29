@@ -52,7 +52,9 @@
 
 <script>
 export default {
-  props: ["contentsList"],
+  props: {
+    contentsList: Array
+  },
   filters: {
     contentDate(val) {
       const date = new Date(val)
