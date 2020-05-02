@@ -1,0 +1,14 @@
+{
+  "title": "Vuexを使ってログイン認証を実装する",
+  "permalink": "vuex-store-authenticated",
+  "description": null,
+  "created_at": "2020-05-03T00:00:00.000Z",
+  "tags": "Vuex",
+  "bodyContent": "Nuxtの公式サイトに[Vueストア](https://ja.nuxtjs.org/guide/vuex-store/)と[middlewareプロパティ](https://ja.nuxtjs.org/api/pages-middleware/)の説明がありますので、こちらを参考にVuexを使ってログイン認証を実装していきます。\n  \nNuxtのストアは「クラシックモード」と「モジュールモード」の2つの書き方がありますが、クラシックモードは廃止予定のモジュールモードで書きます。\n\n## middlewareの用意\nmiddleware/authenticated.jsを作成します。\n\n```js\nexport default function ({ store, redirect }) {\n  // ユーザーが認証されていないとき\n  if (!store.state.authenticated) {\n    return redirect('/login')\n  }\n}\n```\n\n次にpages/secret.vueを作成します。\n```vue\n<template>\n  <h1>シークレットページ</h1>\n</template>\n\n<script>\nexport default {\n  middleware: 'authenticated'\n}\n</script>\n```\n\nこれで/secretにアクセスすると「An error occurred」とエラーになり、/loginページに遷移することが分かります。middlewareのコードをコメントアウトすると問題なくページが表示されます。\n\n## storeの用意\nstore/index.jsを作成します。\n\n```js\nexport const state = () => ({\n  authenticated: true\n})\n```\n\nこれで/secretに再度、アクセスするとエラーは発生せず、ページが表示されました。Vuexを使えていることが確認できます。\n\n\n##",
+  "bodyHtml": "<p>Nuxtの公式サイトに<a href=\"https://ja.nuxtjs.org/guide/vuex-store/\">Vueストア</a>と<a href=\"https://ja.nuxtjs.org/api/pages-middleware/\">middlewareプロパティ</a>の説明がありますので、こちらを参考にVuexを使ってログイン認証を実装していきます。</p>\n<p>Nuxtのストアは「クラシックモード」と「モジュールモード」の2つの書き方がありますが、クラシックモードは廃止予定のモジュールモードで書きます。</p>\n<h2>middlewareの用意</h2>\n<p>middleware/authenticated.jsを作成します。</p>\n<pre><code class=\"hljs\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">{ store, redirect }</span>) </span>{\n  <span class=\"hljs-comment\">// ユーザーが認証されていないとき</span>\n  <span class=\"hljs-keyword\">if</span> (!store.state.authenticated) {\n    <span class=\"hljs-keyword\">return</span> redirect(<span class=\"hljs-string\">'/login'</span>)\n  }\n}</code></pre><p>次にpages/secret.vueを作成します。</p>\n<pre><code class=\"hljs\">&lt;template&gt;\n  &lt;h1&gt;シークレットページ&lt;/h1&gt;\n&lt;/template&gt;\n\n&lt;script&gt;\nexport default {\n  middleware: 'authenticated'\n}\n&lt;/script&gt;</code></pre><p>これで/secretにアクセスすると「An error occurred」とエラーになり、/loginページに遷移することが分かります。middlewareのコードをコメントアウトすると問題なくページが表示されます。</p>\n<h2>storeの用意</h2>\n<p>store/index.jsを作成します。</p>\n<pre><code class=\"hljs\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">const</span> state = <span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> ({\n  <span class=\"hljs-attr\">authenticated</span>: <span class=\"hljs-literal\">true</span>\n})</code></pre><p>これで/secretに再度、アクセスするとエラーは発生せず、ページが表示されました。Vuexを使えていることが確認できます。</p>\n<h2></h2>\n",
+  "dir": "posts/json",
+  "base": "20200503.json",
+  "ext": ".json",
+  "sourceBase": "20200503.md",
+  "sourceExt": ".md"
+}
