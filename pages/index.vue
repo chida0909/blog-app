@@ -57,7 +57,6 @@ export default {
     const pageLength = Math.ceil(contents.length / MAX_COUNT)
     // ページング処理に使うため、一時的に保持
     const contentsAll = contents
-
     return { contents, pageLength, contentsAll }
   },
   methods: {
@@ -66,13 +65,13 @@ export default {
       this.contents = this.contentsAll
 
       const startCount = pageNumber === 1 ? 0 : ( pageNumber - 1 ) * MAX_COUNT
-      const endCount = pageNumber * MAX_COUNT - 1
+      const endCount = pageNumber * MAX_COUNT
       this.contents = this.contents.slice( startCount, endCount )
     }
   },
   mounted() {
     // Vueの要素がマウントされた後、最初のコンテンツの表示を確定させる処理
-    this.contents = this.contents.slice(0, this.maxCount - 1)
+    this.contents = this.contents.slice( 0, this.maxCount - 1 )
   },
   head() {
     return {
