@@ -11,8 +11,8 @@ export const mutations = {
 }
 
 export const actions = {
-  signIn({ commit }, { email, password }){
-    firebase
+  async signIn({ commit }, { email, password }){
+    await firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(user => {
@@ -22,7 +22,7 @@ export const actions = {
       })
       .catch((error) => {
         commit('setSignInState', false)
-        console.log('NG', error)
+        alert('ログインできませんでした')
     })
   }
 }
