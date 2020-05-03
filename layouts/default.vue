@@ -51,7 +51,7 @@
             {{link.icon}}
           </v-icon>
           &nbsp;
-          {{ link.name }}
+          {{link.name}}
         </v-btn>
       </v-img>
     </v-footer>

@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import { sourceFileArray, fileMap } from '@/posts/summary.json'
 import PostsList from '@/components/PostsList.vue'
 import PagiNation from '@/components/PagiNation.vue'
@@ -30,7 +31,7 @@ export default {
       pageLength: 0
     }
   },
-  asyncData(context) {
+  asyncData({store}) {
     // ファイル名の一覧を取得
     const postDates = sourceFileArray.map( s => s.replace(/[^0-9]/g, '') )
     // 記事一覧を生成
@@ -44,7 +45,8 @@ export default {
     }
 
     // pluginsから呼び出した定数
-    const MAX_COUNT = context.app.$contentsMaxCount
+    // const MAX_COUNT = context.app.$contentsMaxCount
+    const MAX_COUNT = 10
 
     // タグを配列に変換
     if (!Array.isArray(contents[0].tags)) {
@@ -57,6 +59,14 @@ export default {
     const pageLength = Math.ceil(contents.length / MAX_COUNT)
     // ページング処理に使うため、一時的に保持
     const contentsAll = contents
+
+    // ログイン認証済みの場合、非公開記事を公開する
+    for (const content of contents) {
+      if (content.private && store.getters['authenticated/isAuthenticated']) {
+        content.private = false
+      }
+    }
+
     return { contents, pageLength, contentsAll }
   },
   methods: {

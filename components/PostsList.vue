@@ -13,7 +13,8 @@
         class="cursor"
       >
         <nuxt-link
-          :to="`/${content.permalink}`"
+          :to="(content.private ? '' : `/${content.permalink}`)"
+          @click.native="submit(content)"
           tag="div"
         >
           <v-img
@@ -22,6 +23,12 @@
            height="225px"
           />
           <v-card-text class="top-date">
+            <v-icon
+              v-if="content.private"
+              style="font-size: 16px;"
+            >
+              mdi-lock
+            </v-icon>
             {{content.created_at | contentDate }}
           </v-card-text>
           <v-card-title class="top-title">
@@ -70,6 +77,13 @@ export default {
       return `${date.getFullYear()}.${getMonth}.${getDate}`
     }
   },
+  methods: {
+    submit( content ) {
+      if ( content && content.private ) {
+        alert('未公開記事のため、読むことが出来ません。')
+      }
+    }
+  }
 }
 </script>
 
