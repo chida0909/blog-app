@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import { sourceFileArray, fileMap } from '@/posts/summary.json'
 import PostsList from '@/components/PostsList.vue'
 import PagiNation from '@/components/PagiNation.vue'
