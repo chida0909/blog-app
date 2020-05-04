@@ -33,7 +33,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/main.css',
+    // '@/assets/main.scss'
+    { src: '~/assets/main.scss', lang: 'scss' },
   ],
   /*
   ** Plugins to load before mounting the App
