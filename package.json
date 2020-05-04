@@ -14,15 +14,16 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.9.6",
     "firebase": "^7.14.2",
-    "highlight.js": "^10.0.1",
     "nuxt": "^2.0.0",
+    "nuxt-user-agent": "^1.2.2",
+    "vue-scrollto": "^2.18.1",
     "vuex": "^3.3.0"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.11.2",
     "eslint": "^6.8.0",
-    "nuxt-user-agent": "^1.2.2",
+    "node-sass": "^4.14.0",
     "processmd": "^4.5.0",
-    "vue-scrollto": "^2.17.1"
+    "sass-loader": "^8.0.2"
   }
 }
