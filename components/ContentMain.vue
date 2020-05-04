@@ -5,18 +5,18 @@
     md="8"
     lg="7"
   >
-    <v-card class="main-content">
+    <v-card class="content-main__content">
       <v-img
         :src="`/posts/${contentMain.postDate}.jpg`"
         height="250px"
       />
-      <v-card-text class="main-date">
+      <v-card-text class="content-main__date">
         {{contentMain.created_at | contentDate }}
       </v-card-text>
-      <v-card-title class="main-title">
+      <v-card-title class="content-main__title">
         {{contentMain.title}}
       </v-card-title>
-        <div class="main-tag">
+        <div class="content-main__tag">
           <span
             v-for="(tag, index) in contentMain.tags"
             :key="index"
@@ -36,7 +36,7 @@
         <hr>
       <v-card-text
         v-html="contentMain.bodyHtml"
-        class="main-article"
+        class="content-main__article"
       >
       </v-card-text>
       <hr>
@@ -82,28 +82,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.main-date {
-  padding-bottom: 0;
-}
-.main-title {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-.main-content {
-  margin: auto;
-}
-.main-article {
-  color: #424242 !important;
-  font-size: 16px;
-  line-height: 2;
+.content-main {
+  &__date {
+    padding-bottom: 0;
+  }
+  &__title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  &__content {
+    margin: auto;
+  }
+  &__article {
+    color: #424242 !important;
+    font-size: 16px;
+    line-height: 2;
+  }
+  &__tag {
+    padding: 0px 0px 8px 8px;
+  }
 }
 .notes {
   color: #424242 !important;
   font-size: 15px;
   line-height: 1.6;
-}
-.main-tag {
-  padding: 0px 0px 8px 8px;
 }
 hr {
   border: 0;

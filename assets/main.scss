@@ -12,15 +12,15 @@ pre {
   margin-bottom: 16px;
 }
 table {
-  border-collapse: collapse;
-  margin-bottom: 16px;
-  table-layout: fixed;
-  word-break: break-all;
-  word-wrap: break-word;
-}
-table th, table td {
-  border: solid 1px gray;
-  padding: 8px;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word;
+  th, td {
+    border: solid 1px gray;
+    padding: 8px;
+  }
 }
 h1 {
   border-bottom: 1px solid #ddd;

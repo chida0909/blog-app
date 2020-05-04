@@ -12,7 +12,7 @@
     <v-card-text
       v-for="(content, index) in contentHeading"
       :key="index"
-      class="table-content"
+      class="content-heding__list"
     >
       <nuxt-link
         v-scroll-to="`#heading-${index}`"
@@ -23,7 +23,7 @@
         {{content}}
       </nuxt-link>
     </v-card-text>
-    <div class="table-content-botton">
+    <div class="content-heding__botton">
       <v-btn
         block
         outlined
@@ -50,14 +50,16 @@ export default {
 }
 </script>
 
-<style scoped>
-.table-content {
-  font-size: 16px;
-  padding: 4px;
-}
-.table-content-botton {
-  padding-top: 16px;
-  max-width: 80%;
+<style lang="scss" scoped>
+.content-heding {
+  &__list {
+    font-size: 16px;
+    padding: 4px;
+  }
+  &__botton {
+    padding-top: 16px;
+    max-width: 80%;
+  }
 }
 .hr {
   max-width: 85%;

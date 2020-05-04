@@ -19,10 +19,10 @@
         >
           <v-img
            :src="`/posts/${content.postDate}.jpg`"
-           class="top-images"
+           class="posts-list__image"
            height="225px"
           />
-          <v-card-text class="top-date">
+          <v-card-text class="posts-list__date">
             <v-icon
               v-if="content.private"
               style="font-size: 16px;"
@@ -31,7 +31,7 @@
             </v-icon>
             {{content.created_at | contentDate }}
           </v-card-text>
-          <v-card-title class="top-title">
+          <v-card-title class="posts-list__title">
             {{content.title}}
           </v-card-title>
           <v-card-text>
@@ -87,17 +87,19 @@ export default {
 }
 </script>
 
-<style scoped>
-.top-images {
-  object-fit: cover;
-  height: 248px;
-}
-.top-date {
-  padding-bottom: 0;
-}
-.top-title {
-  min-height: 96px;
-  padding: 0 16px;
+<style lang="scss" scoped>
+.posts-list {
+  &__image {
+    object-fit: cover;
+    height: 248px;
+  }
+  &__date {
+    padding-bottom: 0;
+  }
+  &__title {
+    min-height: 96px;
+    padding: 0 16px;
+  }
 }
 .tag-btton {
   margin-right: 8px;

@@ -78,7 +78,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .header-tltle {
   font-weight: bold;
   margin-top: 4%;

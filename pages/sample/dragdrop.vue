@@ -46,7 +46,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .list {
   margin: 3px;
   padding: 3px;
