@@ -17,8 +17,9 @@
   </v-app>
 </template>
 
-<script>
-export default {
+<script lang='ts'>
+import Vue from 'vue'
+export default Vue.extend({
   mounted () {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()
@@ -28,5 +29,5 @@ export default {
   head() {
     return { title: 'お問い合わせ' }
   }
-}
+})
 </script>

@@ -49,13 +49,14 @@
   </v-col>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
   props: {
     contentMain: {
       type: Object,
       required: true,
-      validator (value) {
+      validator (value: any) {
         // 必要なkeyが全て存在するかチェック
         const objectKeys = Object.keys( value )
         const contentArray = ['postDate', 'created_at', 'tags', 'bodyHtml', 'title']
@@ -64,21 +65,21 @@ export default {
     }
   },
   filters: {
-    contentDate(val) {
+    contentDate(val: string) {
       const date = new Date(val)
-      let getMonth = date.getMonth() + 1
-      let getDate = date.getDate();
+      let getMonth: number | string = date.getMonth() + 1
+      let getDate: number | string = date.getDate()
 
       if (String(getMonth).length === 1) {
-        getMonth = "0" + getMonth;
+        getMonth = "0" + getMonth
       }
       if (String(getDate).length === 1) {
-        getDate = "0" + getDate;
+        getDate = "0" + getDate
       }
       return `${date.getFullYear()}.${getMonth}.${getDate}`
     }
   }
-};
+})
 </script>
 
 <style lang="scss" scoped>

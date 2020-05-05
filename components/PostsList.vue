@@ -57,16 +57,18 @@
   </v-row>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
   props: {
     contentsList: Array
   },
   filters: {
-    contentDate(val) {
+    contentDate(val: string) {
+
       const date = new Date(val)
-      let getMonth = date.getMonth() + 1
-      let getDate = date.getDate()
+      let getMonth: number | string = date.getMonth() + 1
+      let getDate: number | string = date.getDate()
 
       if (String(getMonth).length === 1) {
         getMonth = "0" + getMonth
@@ -78,13 +80,13 @@ export default {
     }
   },
   methods: {
-    submit( content ) {
+    submit( content: any ) {
       if ( content && content.private ) {
         alert('未公開記事のため、読むことが出来ません。')
       }
     }
   }
-}
+})
 </script>
 
 <style lang="scss" scoped>

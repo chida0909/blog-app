@@ -40,14 +40,16 @@
   </v-col>
 </template>
 
-<script>
+<script lang='ts'>
+import Vue from 'vue'
 import VueScrollTo from 'vue-scrollto'
-export default {
+
+export default Vue.extend({
   props: {
     contentHeading: Array,
-    required: true
-  },
-}
+    // required: true
+  }
+})
 </script>
 
 <style lang="scss" scoped>
