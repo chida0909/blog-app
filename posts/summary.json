@@ -1,5 +1,77 @@
 {
   "fileMap": {
+    "posts/json/20200330.json": {
+      "title": "Nuxt.jsのpluginsを使い定数を定義する",
+      "permalink": "nuxt-plugins-use",
+      "description": null,
+      "created_at": "2020-03-30T00:00:00.000Z",
+      "tags": "Nuxt",
+      "dir": "posts/json",
+      "base": "20200330.json",
+      "ext": ".json",
+      "sourceBase": "20200330.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200402.json": {
+      "title": "VuetifyのCSSを上書きする方法",
+      "permalink": "vuetify-css-overwrite",
+      "description": "VuetifyのCSSを上書きする方法を書きます。",
+      "created_at": "2020-04-02T00:00:00.000Z",
+      "tags": "Vuetify",
+      "dir": "posts/json",
+      "base": "20200402.json",
+      "ext": ".json",
+      "sourceBase": "20200402.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200403.json": {
+      "title": "Nuxt.jsのmiddlewareを使う",
+      "permalink": "nuxt-middleware-use",
+      "description": "Nuxt.jsのMiddlewareを使うことで、レンダリングするよりも前に実行される関数を定義できます。",
+      "created_at": "2020-04-03T00:00:00.000Z",
+      "tags": "Nuxt",
+      "dir": "posts/json",
+      "base": "20200403.json",
+      "ext": ".json",
+      "sourceBase": "20200403.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200406.json": {
+      "title": "Vue.jsスタイルガイド深堀り 優先度A",
+      "permalink": "vue-style-guide-a",
+      "description": "このページはVue.jsスタイルガイドの要約というよりは、個人的に調べた内容を肉付けした記事です。",
+      "created_at": "2020-04-06T00:00:00.000Z",
+      "tags": "Vue",
+      "dir": "posts/json",
+      "base": "20200406.json",
+      "ext": ".json",
+      "sourceBase": "20200406.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200422.json": {
+      "title": "BEMについて",
+      "permalink": "css-bem",
+      "description": null,
+      "created_at": "2020-04-22T00:00:00.000Z",
+      "tags": "CSS",
+      "dir": "posts/json",
+      "base": "20200422.json",
+      "ext": ".json",
+      "sourceBase": "20200422.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200411.json": {
+      "title": "単一ファイルコンポーネントの命名規則",
+      "permalink": "vue-component-naming",
+      "description": "単一ファイルコンポーネントの命名規則についてまとめました。",
+      "created_at": "2020-04-11T00:00:00.000Z",
+      "tags": "Vue",
+      "dir": "posts/json",
+      "base": "20200411.json",
+      "ext": ".json",
+      "sourceBase": "20200411.md",
+      "sourceExt": ".md"
+    },
     "posts/json/20200328.json": {
       "title": "Nuxt.jsの各APIの役割",
       "permalink": "nuxt-api-decipher",
@@ -24,6 +96,18 @@
       "sourceBase": "20200405.md",
       "sourceExt": ".md"
     },
+    "posts/json/20200404.json": {
+      "title": "JavaScriptの配列処理について",
+      "permalink": "js-array-processing",
+      "description": "配列操作について何気なく使っていたので整理しました。",
+      "created_at": "2020-04-04T00:00:00.000Z",
+      "tags": "JavaScript",
+      "dir": "posts/json",
+      "base": "20200404.json",
+      "ext": ".json",
+      "sourceBase": "20200404.md",
+      "sourceExt": ".md"
+    },
     "posts/json/20200329.json": {
       "title": "Nuxt.jsでCSSを共通化する方法",
       "permalink": "nuxt-css-common",
@@ -36,28 +120,16 @@
       "sourceBase": "20200329.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200403.json": {
-      "title": "Nuxt.jsのmiddlewareを使う",
-      "permalink": "nuxt-middleware-use",
-      "description": "Nuxt.jsのMiddlewareを使うことで、レンダリングするよりも前に実行される関数を定義できます。",
-      "created_at": "2020-04-03T00:00:00.000Z",
+    "posts/json/20200401.json": {
+      "title": "Nuxt.jsの各ディレクトリの役割",
+      "permalink": "nuxt-directory-role",
+      "description": "Nuxtの各ディレクトリの役割について仕様をまとめました。",
+      "created_at": "2020-04-01T00:00:00.000Z",
       "tags": "Nuxt",
       "dir": "posts/json",
-      "base": "20200403.json",
+      "base": "20200401.json",
       "ext": ".json",
-      "sourceBase": "20200403.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200404.json": {
-      "title": "JavaScriptの配列処理について",
-      "permalink": "js-array-processing",
-      "description": "配列操作について何気なく使っていたので整理しました。",
-      "created_at": "2020-04-04T00:00:00.000Z",
-      "tags": "JavaScript",
-      "dir": "posts/json",
-      "base": "20200404.json",
-      "ext": ".json",
-      "sourceBase": "20200404.md",
+      "sourceBase": "20200401.md",
       "sourceExt": ".md"
     },
     "posts/json/20200407.json": {
@@ -72,40 +144,16 @@
       "sourceBase": "20200407.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200411.json": {
-      "title": "単一ファイルコンポーネントの命名規則",
-      "permalink": "vue-component-naming",
-      "description": "単一ファイルコンポーネントの命名規則についてまとめました。",
-      "created_at": "2020-04-11T00:00:00.000Z",
-      "tags": "Vue",
-      "dir": "posts/json",
-      "base": "20200411.json",
-      "ext": ".json",
-      "sourceBase": "20200411.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200422.json": {
-      "title": "BEMについて",
-      "permalink": "css-bem",
+    "posts/json/20200423.json": {
+      "title": "Vuexで使われる言葉を調べる",
+      "permalink": "vuex-word",
       "description": null,
-      "created_at": "2020-04-22T00:00:00.000Z",
-      "tags": "CSS",
+      "created_at": "2020-04-23T00:00:00.000Z",
+      "tags": "Vuex",
       "dir": "posts/json",
-      "base": "20200422.json",
+      "base": "20200423.json",
       "ext": ".json",
-      "sourceBase": "20200422.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200406.json": {
-      "title": "Vue.jsスタイルガイド深堀り 優先度A",
-      "permalink": "vue-style-guide-a",
-      "description": "このページはVue.jsスタイルガイドの要約というよりは、個人的に調べた内容を肉付けした記事です。",
-      "created_at": "2020-04-06T00:00:00.000Z",
-      "tags": "Vue",
-      "dir": "posts/json",
-      "base": "20200406.json",
-      "ext": ".json",
-      "sourceBase": "20200406.md",
+      "sourceBase": "20200423.md",
       "sourceExt": ".md"
     },
     "posts/json/20200415.json": {
@@ -132,78 +180,6 @@
       "sourceBase": "20200414.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200425.json": {
-      "title": "TypeScriptのコードを書いて学習する",
-      "permalink": "typescript-code",
-      "description": null,
-      "created_at": "2020-04-25T00:00:00.000Z",
-      "tags": "TypeScript",
-      "dir": "posts/json",
-      "base": "20200425.json",
-      "ext": ".json",
-      "sourceBase": "20200425.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200428.json": {
-      "title": "Vuetifyでページネーションの実装",
-      "permalink": "vuetify-pagination",
-      "description": null,
-      "created_at": "2020-04-28T00:00:00.000Z",
-      "tags": "Vuetify",
-      "dir": "posts/json",
-      "base": "20200428.json",
-      "ext": ".json",
-      "sourceBase": "20200428.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200401.json": {
-      "title": "Nuxt.jsの各ディレクトリの役割",
-      "permalink": "nuxt-directory-role",
-      "description": "Nuxtの各ディレクトリの役割について仕様をまとめました。",
-      "created_at": "2020-04-01T00:00:00.000Z",
-      "tags": "Nuxt",
-      "dir": "posts/json",
-      "base": "20200401.json",
-      "ext": ".json",
-      "sourceBase": "20200401.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200424.json": {
-      "title": "package.jsonのdependenciesなどについて",
-      "permalink": "npm-packagejson-dependencies",
-      "description": null,
-      "created_at": "2020-04-24T00:00:00.000Z",
-      "tags": "JavaScript",
-      "dir": "posts/json",
-      "base": "20200424.json",
-      "ext": ".json",
-      "sourceBase": "20200424.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200501.json": {
-      "title": "FLOCSSについて",
-      "permalink": "css-flocss",
-      "description": null,
-      "created_at": "2020-05-01T00:00:00.000Z",
-      "tags": "CSS",
-      "dir": "posts/json",
-      "base": "20200501.json",
-      "ext": ".json",
-      "sourceBase": "20200501.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200502.json": {
-      "title": "SCSSについて",
-      "permalink": "css-scss",
-      "description": null,
-      "created_at": "2020-05-02T00:00:00.000Z",
-      "tags": "CSS",
-      "dir": "posts/json",
-      "base": "20200502.json",
-      "ext": ".json",
-      "sourceBase": "20200502.md",
-      "sourceExt": ".md"
-    },
     "posts/json/20200426.json": {
       "title": "VuexのmapStateなど",
       "permalink": "vuex-mapstate",
@@ -214,54 +190,6 @@
       "base": "20200426.json",
       "ext": ".json",
       "sourceBase": "20200426.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200427.json": {
-      "title": "promiseの非同期処理について",
-      "permalink": "js-asynchronous",
-      "description": null,
-      "created_at": "2020-04-27T00:00:00.000Z",
-      "tags": "JavaScript",
-      "dir": "posts/json",
-      "base": "20200427.json",
-      "ext": ".json",
-      "sourceBase": "20200427.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200505.json": {
-      "title": "NuxtにTypeScriptを導入する",
-      "permalink": "nuxt-typescript",
-      "description": null,
-      "created_at": "2020-05-05T00:00:00.000Z",
-      "tags": "TypeScript",
-      "dir": "posts/json",
-      "base": "20200505.json",
-      "ext": ".json",
-      "sourceBase": "20200505.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200402.json": {
-      "title": "VuetifyのCSSを上書きする方法",
-      "permalink": "vuetify-css-overwrite",
-      "description": "VuetifyのCSSを上書きする方法を書きます。",
-      "created_at": "2020-04-02T00:00:00.000Z",
-      "tags": "Vuetify",
-      "dir": "posts/json",
-      "base": "20200402.json",
-      "ext": ".json",
-      "sourceBase": "20200402.md",
-      "sourceExt": ".md"
-    },
-    "posts/json/20200423.json": {
-      "title": "Vuexで使われる言葉を調べる",
-      "permalink": "vuex-word",
-      "description": null,
-      "created_at": "2020-04-23T00:00:00.000Z",
-      "tags": "Vuex",
-      "dir": "posts/json",
-      "base": "20200423.json",
-      "ext": ".json",
-      "sourceBase": "20200423.md",
       "sourceExt": ".md"
     },
     "posts/json/20200430.json": {
@@ -289,16 +217,64 @@
       "sourceBase": "20200429.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200330.json": {
-      "title": "Nuxt.jsのpluginsを使い定数を定義する",
-      "permalink": "nuxt-plugins-use",
+    "posts/json/20200428.json": {
+      "title": "Vuetifyでページネーションの実装",
+      "permalink": "vuetify-pagination",
       "description": null,
-      "created_at": "2020-03-30T00:00:00.000Z",
-      "tags": "Nuxt",
+      "created_at": "2020-04-28T00:00:00.000Z",
+      "tags": "Vuetify",
       "dir": "posts/json",
-      "base": "20200330.json",
+      "base": "20200428.json",
       "ext": ".json",
-      "sourceBase": "20200330.md",
+      "sourceBase": "20200428.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200424.json": {
+      "title": "package.jsonのdependenciesなどについて",
+      "permalink": "npm-packagejson-dependencies",
+      "description": null,
+      "created_at": "2020-04-24T00:00:00.000Z",
+      "tags": "JavaScript",
+      "dir": "posts/json",
+      "base": "20200424.json",
+      "ext": ".json",
+      "sourceBase": "20200424.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200427.json": {
+      "title": "promiseの非同期処理について",
+      "permalink": "js-asynchronous",
+      "description": null,
+      "created_at": "2020-04-27T00:00:00.000Z",
+      "tags": "JavaScript",
+      "dir": "posts/json",
+      "base": "20200427.json",
+      "ext": ".json",
+      "sourceBase": "20200427.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200425.json": {
+      "title": "TypeScriptのコードを書いて学習する",
+      "permalink": "typescript-code",
+      "description": null,
+      "created_at": "2020-04-25T00:00:00.000Z",
+      "tags": "TypeScript",
+      "dir": "posts/json",
+      "base": "20200425.json",
+      "ext": ".json",
+      "sourceBase": "20200425.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200504.json": {
+      "title": "NuxtでVuexを使いユーザー認証を行う",
+      "permalink": "nuxt-vuex-authenticated",
+      "description": null,
+      "created_at": "2020-05-04T00:00:00.000Z",
+      "tags": "Vuex",
+      "dir": "posts/json",
+      "base": "20200504.json",
+      "ext": ".json",
+      "sourceBase": "20200504.md",
       "sourceExt": ".md"
     },
     "posts/json/20200503.json": {
@@ -313,16 +289,53 @@
       "sourceBase": "20200503.md",
       "sourceExt": ".md"
     },
-    "posts/json/20200504.json": {
-      "title": "NuxtでVuexを使いユーザー認証を行う",
-      "permalink": "nuxt-vuex-authenticated",
+    "posts/json/20200502.json": {
+      "title": "SCSSについて",
+      "permalink": "css-scss",
       "description": null,
-      "created_at": "2020-05-04T00:00:00.000Z",
-      "tags": "Vuex",
+      "created_at": "2020-05-02T00:00:00.000Z",
+      "tags": "CSS",
       "dir": "posts/json",
-      "base": "20200504.json",
+      "base": "20200502.json",
       "ext": ".json",
-      "sourceBase": "20200504.md",
+      "sourceBase": "20200502.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200501.json": {
+      "title": "FLOCSSについて",
+      "permalink": "css-flocss",
+      "description": null,
+      "created_at": "2020-05-01T00:00:00.000Z",
+      "tags": "CSS",
+      "dir": "posts/json",
+      "base": "20200501.json",
+      "ext": ".json",
+      "sourceBase": "20200501.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200506.json": {
+      "title": "TypeScriptのエラー",
+      "permalink": "typescript-error",
+      "description": null,
+      "private": true,
+      "created_at": "2020-05-06T00:00:00.000Z",
+      "tags": "TypeScript",
+      "dir": "posts/json",
+      "base": "20200506.json",
+      "ext": ".json",
+      "sourceBase": "20200506.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20200505.json": {
+      "title": "NuxtにTypeScriptを導入する",
+      "permalink": "nuxt-typescript",
+      "description": null,
+      "created_at": "2020-05-05T00:00:00.000Z",
+      "tags": "TypeScript",
+      "dir": "posts/json",
+      "base": "20200505.json",
+      "ext": ".json",
+      "sourceBase": "20200505.md",
       "sourceExt": ".md"
     }
   },
@@ -353,6 +366,7 @@
     "./posts/markdown/20200502.md",
     "./posts/markdown/20200503.md",
     "./posts/markdown/20200504.md",
-    "./posts/markdown/20200505.md"
+    "./posts/markdown/20200505.md",
+    "./posts/markdown/20200506.md"
   ]
 }
