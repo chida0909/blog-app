@@ -8,6 +8,7 @@
         lg="3"
       >
         <v-form ref="login_form">
+          <!-- <div>{{ $store.state.authenticated.message }}</div> -->
           <v-text-field
             v-model="email"
             label="id"
@@ -34,7 +35,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapState } from 'vuex'
 
 export default {
   data() {

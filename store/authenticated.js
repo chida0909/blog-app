@@ -1,7 +1,8 @@
 import firebase from '@/plugins/firebase'
 
 export const state = () => ({
-  isSignedIn: false
+  isSignedIn: false,
+  // message: 'hello vuex'
 })
 
 export const mutations = {

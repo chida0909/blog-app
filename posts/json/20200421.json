@@ -1,0 +1,15 @@
+{
+  "title": "非同期処理のasync/awaitについて",
+  "permalink": "js-async-await",
+  "description": null,
+  "private": true,
+  "created_at": "2020-04-21T00:00:00.000Z",
+  "tags": "JavaScript",
+  "bodyContent": "非同期処理やPromiseの説明は[コチラ](/js-asynchronous-promise)をご確認ください。\n\n# async/await\nasync/awaitを利用すると、Promiseを利用した構文よりも、簡潔に非同期処理が書けます。",
+  "bodyHtml": "<p>非同期処理やPromiseの説明は<a href=\"/js-asynchronous-promise\">コチラ</a>をご確認ください。</p>\n<h1>async/await</h1>\n<p>async/awaitを利用すると、Promiseを利用した構文よりも、簡潔に非同期処理が書けます。</p>\n",
+  "dir": "posts/json",
+  "base": "20200421.json",
+  "ext": ".json",
+  "sourceBase": "20200421.md",
+  "sourceExt": ".md"
+}
