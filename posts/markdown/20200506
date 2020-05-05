@@ -1,0 +1,40 @@
+---
+title: TypeScriptのエラー
+permalink: typescript-error
+description: 
+private: true
+created_at: 2020-05-06
+tags: TypeScript
+---
+
+## jsonファイルの読み込み
+jsonファイルを読み込む場合、'--resolveJsonModule'使います。
+
+エラー内容
+```
+Module '@/posts/summary.json' was resolved to '/Users/chida/blog-app/posts/summary.json', but '--resolveJsonModule' is not used.
+```
+
+修正方法は、tsconfig.jsonにresolveJsonModuleを追加します。
+```json
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    // ...
+    }
+}
+```
+
+
+
+## 
+
+```
+Property '$title' does not exist on type 'CombinedVueInstance<Vue, unknown, unknown, unknown, Readonly<Record<never, any>>>'.
+```
+
+## 
+
+```
+Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ "posts/json/20200328.json": { title: string; permalink: string; description: string; created_at: string; tags: string; dir: string; base: string; ext: string; sourceBase: string; sourceExt: string; }; ... 24 more ...; "posts/json/20200504.json": { ...; }; }'.
+```
