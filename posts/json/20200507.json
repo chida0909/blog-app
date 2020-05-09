@@ -1,0 +1,15 @@
+{
+  "title": "UML",
+  "permalink": "クラス図の書き方",
+  "description": null,
+  "private": true,
+  "created_at": "2020-05-07T00:00:00.000Z",
+  "tags": "uml",
+  "bodyContent": "DDDを学習していくうちに、ドメインモデル図を書くフェーズがあります。ドメインモデル図とは、クラス図の簡易版で以下のルールで作成すると良いそうです。\n\n- メソッド(振る舞い)は不要\n- 属性も代表的なものだけでOK\n- 業務の「ルール・制約」(=ドメイン知識) を吹き出しで記述する\n- 集約の範囲を明記する\n\nただ、そもそもクラス図って何だっけ？となったので、まずはクラス図から深堀りします。\n\n# クラス図とは\nクラスとは、オブジェクトを作るためのテンプレートとなるものです。\n\n\n\nクラスは同じ属性を持つオブジェクトをまとめて抽象的に表現するものです。\n-> 属性を持つオブジェクト\n\nクラスは属性（属性名）と操作を持っている。\n\n\n\nシステムを構成するクラスとそれらの関係を表現します。\n各クラスが保持する属性（プロパティ）や操作（メソッド）も表現します。\n\nソフトウェアの設計などに用いられるUMLで規定された図の一つで、システムを構成するクラスとクラス間の相互の関係を表現する図\n\n\n\n\n\n# 参考\n- [【新人教育 資料】第1章 UMLまでの道 〜オブジェクト指向編〜 - Qiita](https://qiita.com/devopsCoordinator/items/7d460008177b318129ea)\n- [クラスから理解するPHPのオブジェクト指向 – 株式会社ライトコード](https://rightcode.co.jp/blog/become-engineer/php-object-orientation)\n- [クラス図(Class Diagram) - UML入門 - IT専科](http://www.itsenka.com/contents/development/uml/class.html)\n- [5分でわかる、UML クラス図 とは？ | Lucidchart](https://www.lucidchart.com/pages/ja/what-is-uml)",
+  "bodyHtml": "<p>DDDを学習していくうちに、ドメインモデル図を書くフェーズがあります。ドメインモデル図とは、クラス図の簡易版で以下のルールで作成すると良いそうです。</p>\n<ul>\n<li>メソッド(振る舞い)は不要</li>\n<li>属性も代表的なものだけでOK</li>\n<li>業務の「ルール・制約」(=ドメイン知識) を吹き出しで記述する</li>\n<li>集約の範囲を明記する</li>\n</ul>\n<p>ただ、そもそもクラス図って何だっけ？となったので、まずはクラス図から深堀りします。</p>\n<h1>クラス図とは</h1>\n<p>クラスとは、オブジェクトを作るためのテンプレートとなるものです。</p>\n<p>クラスは同じ属性を持つオブジェクトをまとめて抽象的に表現するものです。\n-&gt; 属性を持つオブジェクト</p>\n<p>クラスは属性（属性名）と操作を持っている。</p>\n<p>システムを構成するクラスとそれらの関係を表現します。\n各クラスが保持する属性（プロパティ）や操作（メソッド）も表現します。</p>\n<p>ソフトウェアの設計などに用いられるUMLで規定された図の一つで、システムを構成するクラスとクラス間の相互の関係を表現する図</p>\n<h1>参考</h1>\n<ul>\n<li><a href=\"https://qiita.com/devopsCoordinator/items/7d460008177b318129ea\">【新人教育 資料】第1章 UMLまでの道 〜オブジェクト指向編〜 - Qiita</a></li>\n<li><a href=\"https://rightcode.co.jp/blog/become-engineer/php-object-orientation\">クラスから理解するPHPのオブジェクト指向 – 株式会社ライトコード</a></li>\n<li><a href=\"http://www.itsenka.com/contents/development/uml/class.html\">クラス図(Class Diagram) - UML入門 - IT専科</a></li>\n<li><a href=\"https://www.lucidchart.com/pages/ja/what-is-uml\">5分でわかる、UML クラス図 とは？ | Lucidchart</a></li>\n</ul>\n",
+  "dir": "posts/json",
+  "base": "20200507.json",
+  "ext": ".json",
+  "sourceBase": "20200507.md",
+  "sourceExt": ".md"
+}
