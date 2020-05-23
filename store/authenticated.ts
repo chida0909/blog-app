@@ -6,7 +6,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-  setSignInState(state, isSignedIn){
+  setSignInState(state, isSignedIn: boolean){
     state.isSignedIn = isSignedIn
   }
 }

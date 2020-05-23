@@ -12,12 +12,17 @@
 </template>
 
 
-<script>
+<script lang='ts'>
 import { sourceFileArray, fileMap } from '@/posts/summary.json'
 import PostsList from '@/components/PostsList.vue'
 import PagiNation from '@/components/PagiNation.vue'
+import Vue, { PropType } from 'vue'
 
-export default {
+interface MethodType {
+  contentsAll: any
+}
+
+export default Vue.extend({
   components: {
     PostsList,
     PagiNation
@@ -29,8 +34,9 @@ export default {
       // title: this.$title,
       // maxCount: this.$contentsMaxCount,
       contents: [],
+      contentsAll: [],
       pageCurrent: 1, // 初期表示は1から始める
-      pageLength: 0
+      pageLength: 0,
     }
   },
   asyncData({store}) {
@@ -72,7 +78,7 @@ export default {
     return { contents, pageLength, contentsAll }
   },
   methods: {
-    pageChange( pageNumber ) {
+    pageChange( pageNumber: number ): void {
       const MAX_COUNT = 10
       // const MAX_COUNT = this.$contentsMaxCount
       this.contents = this.contentsAll
@@ -98,7 +104,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 
 

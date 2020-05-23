@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noImplicitThis": true,
     "resolveJsonModule": true,
     "target": "es2018",
     "module": "esnext",
@@ -24,6 +25,7 @@
       ]
     },
     "types": [
+      "vuetify",
       "@types/node",
       "@nuxt/types"
     ]

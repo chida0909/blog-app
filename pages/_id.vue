@@ -17,7 +17,7 @@
 <script>
 import { sourceFileArray, fileMap } from '@/posts/summary.json'
 import ContentMain from '@/components/ContentMain.vue'
-import ContentHeading from '@/components/contentHeading.vue'
+import ContentHeading from '@/components/contentHeading'
 
 export default {
   components: {

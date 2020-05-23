@@ -46,8 +46,7 @@ import VueScrollTo from 'vue-scrollto'
 
 export default Vue.extend({
   props: {
-    contentHeading: Array,
-    // required: true
+    contentHeading: Array
   }
 })
 </script>

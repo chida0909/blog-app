@@ -34,10 +34,11 @@
   </v-app>
 </template>
 
-<script>
+<script lang='ts'>
 import { mapActions, mapState } from 'vuex'
+import Vue from 'vue'
 
-export default {
+export default Vue.extend({
   data() {
     return {
       email: null,
@@ -57,5 +58,5 @@ export default {
       }
     })
   }
-}
+})
 </script>
