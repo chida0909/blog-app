@@ -47,6 +47,7 @@ export default Vue.extend({
   methods: {
      ...mapActions({
       submit() {
+        // FIXME: validateメソッドはTS対応出来ない
         if ( !this.$refs.login_form.validate() ) {
           return false
         }
