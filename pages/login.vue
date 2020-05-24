@@ -8,7 +8,6 @@
         lg="3"
       >
         <v-form ref="login_form">
-          <!-- <div>{{ $store.state.authenticated.message }}</div> -->
           <v-text-field
             v-model="email"
             label="id"
@@ -34,7 +33,7 @@
   </v-app>
 </template>
 
-<script lang='ts'>
+<script>
 import { mapActions, mapState } from 'vuex'
 import Vue from 'vue'
 
@@ -48,7 +47,7 @@ export default Vue.extend({
   methods: {
      ...mapActions({
       submit() {
-        if (!this.$refs.login_form.validate()) {
+        if ( !this.$refs.login_form.validate() ) {
           return false
         }
         this.$store.dispatch("authenticated/signIn", {
