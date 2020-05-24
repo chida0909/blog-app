@@ -12,15 +12,15 @@
 </template>
 
 
-<script lang='ts'>
+<script>
 import { sourceFileArray, fileMap } from '@/posts/summary.json'
 import PostsList from '@/components/PostsList.vue'
 import PagiNation from '@/components/PagiNation.vue'
 import Vue, { PropType } from 'vue'
 
-interface MethodType {
-  contentsAll: any
-}
+// interface MethodType {
+//   contentsAll: any
+// }
 
 export default Vue.extend({
   components: {
@@ -78,7 +78,7 @@ export default Vue.extend({
     return { contents, pageLength, contentsAll }
   },
   methods: {
-    pageChange( pageNumber: number ): void {
+    pageChange( pageNumber ) {
       const MAX_COUNT = 10
       // const MAX_COUNT = this.$contentsMaxCount
       this.contents = this.contentsAll
