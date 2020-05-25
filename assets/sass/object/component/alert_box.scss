@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.el-alert__box {
+  position: absolute;
+  height: 21px;
+  left: 32px;
+  right: 12px;
+  top: calc(50% - 21px/2);
+  border-radius: 6px;
+
+  &--error {
+    border: 1px dashed #F53838;
+    color: #F53838;
+    background: #FEF6F7;
+    padding: 8px;
+    transition: .1s;
+  }
+  &--warning {
+    border: 1px dashed #B04B01;
+    color: #B04B01;
+    padding: 8px;
+  }
+}
+
+// https://jp.vuejs.org/v2/guide/transitions.html
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
