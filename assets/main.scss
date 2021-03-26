@@ -1,15 +1,12 @@
-code {
-  color: #424242 !important;
-  box-shadow: none !important;
-  width: 100% !important;
-  font-weight: 1 !important;
-  padding: 16px !important;
-}
-code:after, code:before {
-  content: "" !important;
-}
 pre {
-  margin-bottom: 16px;
+  background: rgba(0, 0, 0, 0.05) !important;
+  padding: 8px !important;
+}
+.theme--light.v-application code {
+  background: initial !important;
+}
+.v-application code {
+  padding: initial !important;
 }
 table {
     border-collapse: collapse;
