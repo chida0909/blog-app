@@ -373,6 +373,18 @@
       "ext": ".json",
       "sourceBase": "20200524.md",
       "sourceExt": ".md"
+    },
+    "posts/json/20210326.json": {
+      "title": "TypeScriptのインターフェース",
+      "permalink": "typeScript-interface",
+      "description": null,
+      "created_at": "2021-03-27T00:00:00.000Z",
+      "tags": "TypeScript",
+      "dir": "posts/json",
+      "base": "20210326.json",
+      "ext": ".json",
+      "sourceBase": "20210326.md",
+      "sourceExt": ".md"
     }
   },
   "sourceFileArray": [
@@ -406,6 +418,7 @@
     "./posts/markdown/20200505.md",
     "./posts/markdown/20200506.md",
     "./posts/markdown/20200523.md",
-    "./posts/markdown/20200524.md"
+    "./posts/markdown/20200524.md",
+    "./posts/markdown/20210326.md"
   ]
 }
