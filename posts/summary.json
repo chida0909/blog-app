@@ -374,6 +374,18 @@
       "sourceBase": "20200524.md",
       "sourceExt": ".md"
     },
+    "posts/json/20210325.json": {
+      "title": "Static Method",
+      "permalink": "javascript-static-method",
+      "description": null,
+      "created_at": "2021-03-25T00:00:00.000Z",
+      "tags": "JavaScript",
+      "dir": "posts/json",
+      "base": "20210325.json",
+      "ext": ".json",
+      "sourceBase": "20210325.md",
+      "sourceExt": ".md"
+    },
     "posts/json/20210326.json": {
       "title": "TypeScriptのインターフェース",
       "permalink": "typeScript-interface",
@@ -431,6 +443,7 @@
     "./posts/markdown/20200506.md",
     "./posts/markdown/20200523.md",
     "./posts/markdown/20200524.md",
+    "./posts/markdown/20210325.md",
     "./posts/markdown/20210326.md",
     "./posts/markdown/20210327.md"
   ]
