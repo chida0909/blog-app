@@ -378,12 +378,24 @@
       "title": "TypeScriptのインターフェース",
       "permalink": "typeScript-interface",
       "description": null,
-      "created_at": "2021-03-27T00:00:00.000Z",
+      "created_at": "2021-03-26T00:00:00.000Z",
       "tags": "TypeScript",
       "dir": "posts/json",
       "base": "20210326.json",
       "ext": ".json",
       "sourceBase": "20210326.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20210327.json": {
+      "title": "ポリモーフィズム",
+      "permalink": "javascript-polymorphism",
+      "description": null,
+      "created_at": "2021-03-27T00:00:00.000Z",
+      "tags": "JavaScript",
+      "dir": "posts/json",
+      "base": "20210327.json",
+      "ext": ".json",
+      "sourceBase": "20210327.md",
       "sourceExt": ".md"
     }
   },
@@ -419,6 +431,7 @@
     "./posts/markdown/20200506.md",
     "./posts/markdown/20200523.md",
     "./posts/markdown/20200524.md",
-    "./posts/markdown/20210326.md"
+    "./posts/markdown/20210326.md",
+    "./posts/markdown/20210327.md"
   ]
 }
