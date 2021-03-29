@@ -1,0 +1,14 @@
+{
+  "title": "switch文を使わないコードメモ",
+  "permalink": "javascript-switch",
+  "description": null,
+  "created_at": "2021-03-28T00:00:00.000Z",
+  "tags": "JavaScript",
+  "bodyContent": "```\nconst COLOR_NAME = {\n  GREY: \"paleGrey\",\n  SCARLET: \"paleScarlet\",\n  LIGHT_BLUE: \"paleLightBlue\",\n  LIGHT_GREEN: \"paleLightGreen\",\n  PURPLE: \"palePurple\",\n  ORANGE: \"paleOrange\",\n  BLUE: \"paleBlue\",\n  GREEN: \"paleGreen\",\n  MAGENTA: \"paleMagenta\"\n};\n\nconst convertColorCode = (colorName) => {\n  const colorNames = {\n    [COLOR_NAME.GREY]: \"#4D4C4B\",\n    [COLOR_NAME.SCARLET]: \"#561E06\",\n    [COLOR_NAME.LIGHT_BLUE]: \"#07425F\",\n    [COLOR_NAME.LIGHT_GREEN]: \"#3A4B16\",\n    [COLOR_NAME.PURPLE]: \"#372034\",\n    [COLOR_NAME.ORANGE]: \"#603C06\",\n    [COLOR_NAME.BLUE]: \"#192D4D\",\n    [COLOR_NAME.GREEN]: \"#1E3E24\",\n    [COLOR_NAME.MAGENTA]: \"#691136\"\n  };\n\n  return colorNames[colorName];\n};\n\nconst colorName = convertColorCode(COLOR_NAME.LIGHT_GREEN);\nconsole.log(colorName); // #3A4B16\n```",
+  "bodyHtml": "<pre><code>const COLOR_NAME = {\n  GREY: &quot;paleGrey&quot;,\n  SCARLET: &quot;paleScarlet&quot;,\n  LIGHT_BLUE: &quot;paleLightBlue&quot;,\n  LIGHT_GREEN: &quot;paleLightGreen&quot;,\n  PURPLE: &quot;palePurple&quot;,\n  ORANGE: &quot;paleOrange&quot;,\n  BLUE: &quot;paleBlue&quot;,\n  GREEN: &quot;paleGreen&quot;,\n  MAGENTA: &quot;paleMagenta&quot;\n};\n\nconst convertColorCode = (colorName) =&gt; {\n  const colorNames = {\n    [COLOR_NAME.GREY]: &quot;#4D4C4B&quot;,\n    [COLOR_NAME.SCARLET]: &quot;#561E06&quot;,\n    [COLOR_NAME.LIGHT_BLUE]: &quot;#07425F&quot;,\n    [COLOR_NAME.LIGHT_GREEN]: &quot;#3A4B16&quot;,\n    [COLOR_NAME.PURPLE]: &quot;#372034&quot;,\n    [COLOR_NAME.ORANGE]: &quot;#603C06&quot;,\n    [COLOR_NAME.BLUE]: &quot;#192D4D&quot;,\n    [COLOR_NAME.GREEN]: &quot;#1E3E24&quot;,\n    [COLOR_NAME.MAGENTA]: &quot;#691136&quot;\n  };\n\n  return colorNames[colorName];\n};\n\nconst colorName = convertColorCode(COLOR_NAME.LIGHT_GREEN);\nconsole.log(colorName); // #3A4B16\n</code></pre>\n",
+  "dir": "posts/json",
+  "base": "20210328.json",
+  "ext": ".json",
+  "sourceBase": "20210328.md",
+  "sourceExt": ".md"
+}
