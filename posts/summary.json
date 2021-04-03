@@ -399,7 +399,7 @@
       "sourceExt": ".md"
     },
     "posts/json/20210327.json": {
-      "title": "ポリモーフィズム",
+      "title": "ダックタイピングによるポリモーフィズム",
       "permalink": "javascript-polymorphism",
       "description": null,
       "created_at": "2021-03-27T00:00:00.000Z",
@@ -420,6 +420,18 @@
       "base": "20210328.json",
       "ext": ".json",
       "sourceBase": "20210328.md",
+      "sourceExt": ".md"
+    },
+    "posts/json/20210329.json": {
+      "title": "TypeScriptでポリモーフィズム",
+      "permalink": "typescript-switch",
+      "description": null,
+      "created_at": "2021-03-29T00:00:00.000Z",
+      "tags": "TypeScript",
+      "dir": "posts/json",
+      "base": "20210329.json",
+      "ext": ".json",
+      "sourceBase": "20210329.md",
       "sourceExt": ".md"
     }
   },
@@ -458,6 +470,7 @@
     "./posts/markdown/20210325.md",
     "./posts/markdown/20210326.md",
     "./posts/markdown/20210327.md",
-    "./posts/markdown/20210328.md"
+    "./posts/markdown/20210328.md",
+    "./posts/markdown/20210329.md"
   ]
 }

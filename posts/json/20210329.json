@@ -1,0 +1,14 @@
+{
+  "title": "TypeScriptでポリモーフィズム",
+  "permalink": "typescript-switch",
+  "description": null,
+  "created_at": "2021-03-29T00:00:00.000Z",
+  "tags": "TypeScript",
+  "bodyContent": "## ポリモーフィズムとは\nポリモーフィズムとは異なる型のオブジェクトを同一視し、そのオブジェクトの型によって動作を切り替えることです。\n  \nポリモーフィズムは動的型付け言語ではダックタイピング、静的型付け言語ではインターフェースや抽象クラスで実現できます。\n  \nインターフェースを利用したポリモーフィズムの場合、同じインタフェースを実装した異なるクラスは、同じ要求をしても異なる動作を行う、という考え方になります。\n  \nこの考え方により異なる実装を、その違いを意識せずに同じように扱うことが出来ます。GoFデザインパターンにおけるCommandパターンや、Strategyパターンはポリモーフィズムの考え方に基づいています。\n  \n入門書によく出てくる例えですが、「動物」インタフェースを実装した「犬」クラスと「猫」クラスでは、同じ「鳴く」メソッドを呼び出しても実行結果は異なります。\n  \n```\n// Animalインターフェース どう鳴くかは実装クラスが決める\ninterface Animal {\n  cry(): string;\n}\n\n// Animalインターフェースの実装 ワンと鳴く\nclass Doc implements Animal {\n  cry() {\n    return \"ワン\";\n  }\n}\n\n// Animalインターフェースの実装 ニャーと鳴く\nclass Cat implements Animal {\n  cry() {\n    return \"ニャー\";\n  }\n}\n\n// DocクラスとCatクラスの実行\nclass Program {\n  main() {\n    const animals: Animal[] = [new Doc(), new Cat()];\n    for (const animal of animals) {\n      console.log(animal.cry()); // ワン ニャー\n    }\n  }\n}\n\nconst program = new Program();\nprogram.main();\n```\n\n## 参考\n- [プログラマー１年生がポリモーフィズムについて学んだのでＲＰＧで説明する。 - Qiita](https://qiita.com/Nossa/items/b6e2f4ed0fa079359fc5#typescript%E3%81%A7%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%BF%E3%82%8B)\n- [インタフェースとポリモーフィズム - 記憶庫](https://knowledgefort.hatenadiary.jp/entry/20091013/1255399890)",
+  "bodyHtml": "<h2>ポリモーフィズムとは</h2>\n<p>ポリモーフィズムとは異なる型のオブジェクトを同一視し、そのオブジェクトの型によって動作を切り替えることです。</p>\n<p>ポリモーフィズムは動的型付け言語ではダックタイピング、静的型付け言語ではインターフェースや抽象クラスで実現できます。</p>\n<p>インターフェースを利用したポリモーフィズムの場合、同じインタフェースを実装した異なるクラスは、同じ要求をしても異なる動作を行う、という考え方になります。</p>\n<p>この考え方により異なる実装を、その違いを意識せずに同じように扱うことが出来ます。GoFデザインパターンにおけるCommandパターンや、Strategyパターンはポリモーフィズムの考え方に基づいています。</p>\n<p>入門書によく出てくる例えですが、「動物」インタフェースを実装した「犬」クラスと「猫」クラスでは、同じ「鳴く」メソッドを呼び出しても実行結果は異なります。</p>\n<pre><code>// Animalインターフェース どう鳴くかは実装クラスが決める\ninterface Animal {\n  cry(): string;\n}\n\n// Animalインターフェースの実装 ワンと鳴く\nclass Doc implements Animal {\n  cry() {\n    return &quot;ワン&quot;;\n  }\n}\n\n// Animalインターフェースの実装 ニャーと鳴く\nclass Cat implements Animal {\n  cry() {\n    return &quot;ニャー&quot;;\n  }\n}\n\n// DocクラスとCatクラスの実行\nclass Program {\n  main() {\n    const animals: Animal[] = [new Doc(), new Cat()];\n    for (const animal of animals) {\n      console.log(animal.cry()); // ワン ニャー\n    }\n  }\n}\n\nconst program = new Program();\nprogram.main();\n</code></pre>\n<h2>参考</h2>\n<ul>\n<li><a href=\"https://qiita.com/Nossa/items/b6e2f4ed0fa079359fc5#typescript%E3%81%A7%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%BF%E3%82%8B\">プログラマー１年生がポリモーフィズムについて学んだのでＲＰＧで説明する。 - Qiita</a></li>\n<li><a href=\"https://knowledgefort.hatenadiary.jp/entry/20091013/1255399890\">インタフェースとポリモーフィズム - 記憶庫</a></li>\n</ul>\n",
+  "dir": "posts/json",
+  "base": "20210329.json",
+  "ext": ".json",
+  "sourceBase": "20210329.md",
+  "sourceExt": ".md"
+}
