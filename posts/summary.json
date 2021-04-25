@@ -433,6 +433,18 @@
       "ext": ".json",
       "sourceBase": "20210329.md",
       "sourceExt": ".md"
+    },
+    "posts/json/20210425.json": {
+      "title": "TypeScript 呼び出しシグネチャ オーバーロード ジェネリック",
+      "permalink": "typescript-call-signature-over-load-signature",
+      "description": null,
+      "created_at": "2021-04-25T00:00:00.000Z",
+      "tags": "TypeScript",
+      "dir": "posts/json",
+      "base": "20210425.json",
+      "ext": ".json",
+      "sourceBase": "20210425.md",
+      "sourceExt": ".md"
     }
   },
   "sourceFileArray": [
@@ -471,6 +483,7 @@
     "./posts/markdown/20210326.md",
     "./posts/markdown/20210327.md",
     "./posts/markdown/20210328.md",
-    "./posts/markdown/20210329.md"
+    "./posts/markdown/20210329.md",
+    "./posts/markdown/20210425.md"
   ]
 }
